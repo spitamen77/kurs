@@ -4,18 +4,18 @@ use yii\helpers\Html;
     $this->title='Sayt sozlamalari';
     $this->registerMetaTag([
        'name'=>'description',
-        'content'=>'Andijon investitsiya'
+        'content'=>'Andijon adminitsiya'
     ]);
     $this->registerMetaTag([
        'name'=>'keywords',
-        'content'=>'andijon, investitsiya, invest, andijon viloyati'
+        'content'=>'andijon, adminitsiya, admin, andijon viloyati'
     ]);
 
 if (!Yii::$app->user->identity){
 
     ?>
 
-    <div class="invest-default-index">
+    <div class="admin-default-index">
         <h1><?= $this->context->action->uniqueId ?></h1>
         <p>
             This is the view content for action "<?= $this->context->action->id ?>".
@@ -52,14 +52,14 @@ if (!Yii::$app->user->identity){
                         'attribute'=>'username',
                         'label'=>'Foydalanuvchi:'
                     ],
-                    // 'fio',
-                    // [
-                    //     'attribute'=>'birthdate',
-                    //     'value'=>function($model){
-                    //         return date('d-m-Y', $model->birthdate);
-                    //     }
-                    // ],
-                    // 'tel',
+                    'fio',
+                    [
+                        'attribute'=>'birthdate',
+                        'value'=>function($model){
+                            return date('d-m-Y', $model->birthdate);
+                        }
+                    ],
+                    'tel',
                     'email'
                 ],
             ]) ?>

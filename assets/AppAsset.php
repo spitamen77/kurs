@@ -20,38 +20,32 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        '/themes/margo-shop/css/font-awesome.min.css',
-        '/themes/margo-shop/css/ionicons.min.css',
-        '/themes/margo-shop/css/linearicons.css',
-        '/themes/margo-shop/css/nice-select.css',
-        '/themes/margo-shop/css/jquery.fancybox.css',
-        '/themes/margo-shop/css/jquery-ui.min.css',
-        '/themes/margo-shop/css/meanmenu.min.css',
-        '/themes/margo-shop/css/nivo-slider.css',
-        '/themes/margo-shop/css/owl.carousel.min.css',
-        '/themes/margo-shop/css/bootstrap.min.css',
-        '/themes/margo-shop/css/default.css',
-        '/themes/margo-shop/css/style.css',
-        '/themes/margo-shop/css/responsive.css',
+        '/themes/edutech/css/style.css',
+        '/themes/edutech/css/responsive.css',
         
        
 
     ];
     public $js = [
-        '/themes/margo-shop/js/modernizr-3.5.0.min.js',
-        '/themes/margo-shop/js/jquery-3.2.1.min.js',
-        '/themes/margo-shop/js/jquery.countdown.min.js',
-        '/themes/margo-shop/js/jquery.meanmenu.min.js',
-        '/themes/margo-shop/js/jquery.scrollUp.js',
-        '/themes/margo-shop/js/jquery.nivo.slider.js',
-        '/themes/margo-shop/js/jquery.fancybox.min.js',
-        '/themes/margo-shop/js/jquery.nice-select.min.js',
-        '/themes/margo-shop/js/jquery-ui.min.js',
-        '/themes/margo-shop/js/owl.carousel.min.js',
-        '/themes/margo-shop/js/popper.min.js',
-        '/themes/margo-shop/js/bootstrap.min.js',
-        '/themes/margo-shop/js/plugins.js',
-        '/themes/margo-shop/js/main.js',
+//        '/themes/edutech/js/jquery-3.2.1.min.js',
+        '/themes/edutech/js/jquery-2.1.4.js',
+        '/themes/edutech/js/bootstrap.min.js',
+        '/themes/edutech/js/jquery.themepunch.tools.min.js',
+        '/themes/edutech/js/jquery.themepunch.revolution.min.js',
+        '/themes/edutech/js/revolution.extension.slideanims.min.js',
+        '/themes/edutech/js/revolution.extension.layeranimation.min.js',
+        '/themes/edutech/js/revolution.extension.navigation.min.js',
+        '/themes/edutech/js/revolution.extension.kenburn.min.js',
+        '/themes/edutech/js/revolution.extension.actions.min.js',
+        '/themes/edutech/js/gmap.js',
+        '/themes/edutech/js/bootstrap-select.js',
+        
+        '/themes/edutech/js/jquery.timepicker.min.js',
+        '/themes/edutech/js/wow.min.js',
+        '/themes/edutech/js/owl.carousel.min.js',
+        '/themes/edutech/js/jquery.appear.js',
+        '/themes/edutech/js/jquery.countTo.js',
+        '/themes/edutech/js/theme.js',
     ];
     public $depends = [
         // 'yii\web\YiiAsset',

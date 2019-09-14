@@ -11,13 +11,13 @@
             </div>
             <div class="pull-left info">
                 <a href="<?=Yii::$app->UrlManager->createUrl('/admin/.')?>"
-                <p>www.telfon.uz</p>
+                <p>www.admin.uz</p>
                 </a>
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>
         <a href="<?=Yii::$app->UrlManager->createUrl('/admin/user/user')?>">
-        <p style="color: white" align="center"><?//=Yii::$app->user->identity->fio?></p>
+        <p style="color: white" align="center"><?=Yii::$app->user->identity->fio?></p>
         </a>
         <!-- search form -->
         <!-- <form action="#" method="get" class="sidebar-form">
@@ -36,17 +36,12 @@
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget'=> 'tree'],
                 'items' => [
                     ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
-                    ['label' => 'E`lonlar', 'icon' => 'file-code-o', 'url' => ['/admin/item/index']],
-                    ['label' => 'Category', 'icon' => 'file-code-o', 'url' => ['/admin/category/index']],
-                    ['label' => 'Vendor', 'icon' => 'file-code-o', 'url' => ['/admin/vendor/index']],
-                    ['label' => 'Model', 'icon' => 'file-code-o', 'url' => ['/admin/model/index']],
-                    ['label' => 'Detail', 'icon' => 'file-code-o', 'url' => ['/admin/detail/index']],
-                    ['label' => 'Detail Qiymati', 'icon' => 'file-code-o', 'url' => ['/admin/detailval/index']],
-                    ['label' => 'Rasm', 'icon' => 'file-code-o', 'url' => ['/admin/mrasm/index']],
+                    ['label' => 'Menu', 'icon' => 'file-code-o', 'url' => ['/admin/menu/index']],
+                    ['label' => 'Maqolalar', 'icon' => 'file-code-o', 'url' => ['/admin/menu-item/index']],
                     ['label' => 'Tarjimalar', 'icon' => 'file-code-o', 'url' => ['/admin/text-translate/index']],
-                    ['label' => 'Viloyat', 'icon' => 'file-code-o', 'url' => ['/admin/viloyat/index']],
-                    ['label' => 'Tuman', 'icon' => 'file-code-o', 'url' => ['/admin/tuman/index']],
-                    ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug']],
+                    ['label' => 'Rasm', 'icon' => 'file-code-o', 'url' => ['/admin/photo/index']],
+                    ['label' => 'Shopcart', 'icon' => 'dashboard', 'url' => ['/admin/shopcart/index']],
+                    ['label' => 'User', 'icon' => 'dashboard', 'url' => ['/admin/user/index']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     // [
                     //     'label' => 'Some tools',

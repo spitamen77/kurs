@@ -23,17 +23,6 @@ class User extends ActiveRecord implements IdentityInterface
        }
         return parent::beforeSave($insert);
     }
-
-    public function attributeLabels() // Используется для локализации
-    {
-        return [
-            'fio' => 'F.I.O:',
-            'birthdate'=>'Tug`ilgan vaqti:',
-            'tel'=>'Telefon raqam:',
-             'email' => 'E-maili:',
-            // 'password' => 'Пароль',
-        ];
-    }
     
     // Переопределяем методы для интерфейса
     public static function findIdentity($id)

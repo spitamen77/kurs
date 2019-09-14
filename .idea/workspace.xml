@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="10fcf7f8-dfc7-4396-a79d-21884c3b6972" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/about-us.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/blog-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/blog-v1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/contact-us.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/course-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/course-v1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/css/bootstrap-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/css/flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/css/jquery.timepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/css/layers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/css/navigation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/css/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/css/owl.theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/css/settings.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/css/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/event-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/event.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/faq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/fonts/Flaticon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/fonts/lato-semibold-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/fonts/revicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/images/1 (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/images/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/images/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/images/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/images/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/images/slide-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/images/slide-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/images/slide-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/AuthenticationService.Authenticate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/bootstrap-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/gmap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/jquery-2.1.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/jquery.appear.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/jquery.countTo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/jquery.themepunch.revolution.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/jquery.themepunch.tools.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/jquery.timepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/revolution.extension.actions.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/revolution.extension.kenburn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/revolution.extension.layeranimation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/revolution.extension.navigation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/revolution.extension.slideanims.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/js/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/our-teacher.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/edutech/teacher-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/AppAsset.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/AppAsset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/invest.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ChangePassword.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Default2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Detail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/DetailValue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Model2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Photo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Project.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/SignupForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/SignupForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Tuman.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Vendor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Viloyat.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search/CategorySearch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search/Default2Search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search/DetailSearch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search/DetailValueSearch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search/GuestSearch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search/ItemSearch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search/ModelSearch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search/PostSearch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search/QidirForm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search/ShaxarSearch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search/TextTranslateSearch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search/ToliqSearch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search/TumanSearch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search/VendorSearch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search/ViloyatSearch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/admin/Module.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/controllers/CategoryController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/controllers/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/admin/controllers/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/controllers/DetailController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/controllers/DetailvalController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/controllers/ItemController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/controllers/ModelController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/controllers/MrasmController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/admin/controllers/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/controllers/TextTranslateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/admin/controllers/TextTranslateController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/controllers/TumanController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/admin/controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/controllers/VendorController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/controllers/ViloyatController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/category/_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/category/_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/category/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/category/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/category/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/category/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/default/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/admin/views/default/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/detail/_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/detail/_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/detail/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/detail/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/detail/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/detail/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/detailval/_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/detailval/_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/detailval/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/detailval/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/detailval/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/detailval/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/item/_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/item/_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/item/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/item/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/item/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/item/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/layouts/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/admin/views/layouts/content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/admin/views/layouts/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/layouts/left.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/admin/views/layouts/left.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/model/_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/model/_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/model/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/model/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/model/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/model/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/mrasm/_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/mrasm/_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/mrasm/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/mrasm/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/mrasm/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/mrasm/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/text-translate/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/admin/views/text-translate/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/text-translate/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/admin/views/text-translate/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/tuman/_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/tuman/_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/tuman/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/tuman/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/tuman/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/tuman/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/user/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/admin/views/user/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/user/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/admin/views/user/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/vendor/_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/vendor/_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/vendor/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/vendor/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/vendor/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/vendor/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/viloyat/_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/viloyat/_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/viloyat/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/viloyat/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/viloyat/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/views/viloyat/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/._margo-free-lite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._accordion-toggles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._action-box.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._blog-left-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._buttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._fonts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._forms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._images" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._index-01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._index-02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._index-03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._index-04.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._index-05.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._index-06.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._index-07.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._index-08.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._index-09.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._latest-posts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._latest-projects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._left-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._portfolio-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._portfolio-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._portfolio-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._pricing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._right-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._single-post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._single-project.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._tabs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/._testimonials.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/asset/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/asset/._css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/asset/._js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/asset/css/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/asset/css/._bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/asset/js/._bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/._animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/._colors" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/._font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/._responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/._settings.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/._slicknav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/._style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/colors/._beige.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/colors/._blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/colors/._cyan.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/colors/._green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/colors/._jade.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/colors/._orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/colors/._peach.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/colors/._pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/colors/._purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/colors/._red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/colors/._sky-blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/css/colors/._yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/fonts/._FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/fonts/._fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/fonts/._fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/fonts/._fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/fonts/._fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/fonts/._fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/fonts/._glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/fonts/._glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/fonts/._glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/fonts/._glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/fonts/._glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._about-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._about-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._about-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._author.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._blog-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._blog-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._blog-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._blog-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._blog-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._blog-mini-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._blog-mini-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._blog-mini-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._bussniss-pic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._c1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._c2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._c3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._c4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._c5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._c6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._c7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._dummy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._flickr-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._flickr-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._flickr-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._flickr-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._flickr-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._flickr-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._flickr-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._flickr-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._flickr-09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._footer-margo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._icons" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._map-marker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._margo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._parallax" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._patterns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._portfolio-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._portfolio-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._portfolio-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._portfolio-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._portfolio-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._portfolio-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._portfolio-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._portfolio-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._portfolio-09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._portfolio-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._service-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._service-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._service-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._slide-02-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._slider" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/._team" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/icons/._switcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/parallax/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/parallax/._bg-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/parallax/._bg-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/patterns/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/patterns/._1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/patterns/._10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/patterns/._11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/patterns/._12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/patterns/._13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/patterns/._14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/patterns/._2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/patterns/._3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/patterns/._4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/patterns/._5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/patterns/._6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/patterns/._7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/patterns/._8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/patterns/._9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/portfolio-1/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/portfolio-1/._1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/portfolio-1/._10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/portfolio-1/._11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/portfolio-1/._12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/portfolio-1/._2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/portfolio-1/._3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/portfolio-1/._4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/portfolio-1/._5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/portfolio-1/._6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/portfolio-1/._7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/portfolio-1/._8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/portfolio-1/._9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/slider/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/slider/._01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/slider/._02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/slider/._03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/slider/._04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/slider/._bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/slider/._bg1x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/slider/._bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/slider/._bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/slider/._bg4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/slider/._bg5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/team/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/team/._face_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/team/._face_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/team/._face_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/images/team/._face_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._contact-form-script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._count-to.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._form-validator.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._jquery-2.1.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._jquery-migrate-1.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._jquery.appear.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._jquery.easypiechart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._jquery.easypiechart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._jquery.fitvids.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._jquery.isotope.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._jquery.isotope.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._jquery.lettering.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._jquery.migrate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._jquery.parallax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._jquery.slicknav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._jquery.textillate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._mediaelement-and-player.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._modernizrr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._nivo-lightbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._nivo-lightbox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._skrollr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/js/._smooth-scroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/php/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/__MACOSX/margo-free-lite/php/._form-process.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/accordion-toggles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/action-box.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/asset/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/asset/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/blog-left-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/buttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/colors/beige.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/colors/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/colors/cyan.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/colors/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/colors/jade.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/colors/orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/colors/peach.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/colors/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/colors/purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/colors/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/colors/sky-blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/colors/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/settings.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/slicknav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/forms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/about-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/about-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/about-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/author.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/blog-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/blog-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/blog-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/blog-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/blog-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/blog-mini-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/blog-mini-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/blog-mini-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/bussniss-pic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/c1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/c2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/c3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/c4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/c5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/c6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/c7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/dummy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/flickr-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/flickr-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/flickr-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/flickr-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/flickr-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/flickr-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/flickr-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/flickr-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/flickr-09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/footer-margo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/icons/switcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/map-marker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/margo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/parallax/bg-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/parallax/bg-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/patterns/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/patterns/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/patterns/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/patterns/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/patterns/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/patterns/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/patterns/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/patterns/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/patterns/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/patterns/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/patterns/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/patterns/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/patterns/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/patterns/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-1/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-1/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-1/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-1/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-1/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-1/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-1/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-1/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-1/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-1/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-1/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/portfolio-1/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/service-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/service-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/service-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/slide-02-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/slider/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/slider/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/slider/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/slider/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/slider/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/slider/bg1x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/slider/bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/slider/bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/slider/bg4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/slider/bg5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/team/face_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/team/face_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/team/face_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/images/team/face_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/index-01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/index-02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/index-03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/index-04.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/index-05.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/index-06.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/index-07.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/index-08.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/index-09.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/contact-form-script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/count-to.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/form-validator.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/jquery-2.1.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/jquery-migrate-1.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/jquery.appear.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/jquery.easypiechart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/jquery.easypiechart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/jquery.fitvids.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/jquery.isotope.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/jquery.isotope.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/jquery.lettering.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/jquery.migrate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/jquery.parallax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/jquery.slicknav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/jquery.textillate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/mediaelement-and-player.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/modernizrr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/nivo-lightbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/nivo-lightbox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/skrollr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/js/smooth-scroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/latest-posts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/latest-projects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/left-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/php/form-process.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/portfolio-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/portfolio-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/portfolio-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/pricing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/right-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/single-post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/single-project.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/tabs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/margo-free-lite/margo-free-lite/testimonials.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/asset/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/asset/js/bootstrap.min.js" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/site/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1254">
+              <caret line="920" column="6" selection-start-line="920" selection-start-column="6" selection-end-line="920" selection-end-column="6" />
+              <folding>
+                <element signature="n#div#0;n#!!top" />
+                <element signature="n#div#1;n#!!top" />
+                <element signature="n#div#2;n#!!top" />
+                <element signature="n#div#3;n#!!top" />
+                <element signature="n#div#4;n#!!top" />
+                <element signature="n#div#5;n#!!top" />
+                <element signature="n#div#6;n#!!top" />
+                <element signature="n#div#7;n#!!top" />
+                <element signature="n#div#8;n#!!top" />
+                <element signature="n#div#9;n#!!top" />
+                <element signature="n#div#10;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="523">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/layouts/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
+              <folding>
+                <element signature="n#header#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/layouts/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="172" column="6" selection-start-line="172" selection-start-column="6" selection-end-line="172" selection-end-column="6" />
+              <folding>
+                <element signature="n#footer#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/AppAsset.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/themes/edutech/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="357" column="21" selection-start-line="357" selection-start-column="21" selection-end-line="357" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/themes/edutech/css/flaticon.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>invest</find>
+      <find>margo-shop</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>admin</replace>
+      <replace>edutech</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\Администратор\AppData\Roaming\IDM\OSPanel\domains\kurs\modules\admin</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/assets/AppAsset.php" />
+        <option value="$PROJECT_DIR$/views/site/index.php" />
+        <option value="$PROJECT_DIR$/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/views/layouts/header.php" />
+        <option value="$PROJECT_DIR$/views/layouts/footer.php" />
+        <option value="$PROJECT_DIR$/web/themes/edutech/css/style.css" />
+        <option value="$PROJECT_DIR$/web/themes/edutech/css/flaticon.css" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-faker" />
+      <path value="$PROJECT_DIR$/vendor/fortawesome/font-awesome" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-debug" />
+      <path value="$PROJECT_DIR$/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-composer" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-gii" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/php-diff" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/tinymce/tinymce" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/rmrevin/yii2-fontawesome" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/dmstr/yii2-adminlte-asset" />
+      <path value="$PROJECT_DIR$/vendor/cebe/markdown" />
+      <path value="$PROJECT_DIR$/vendor/cebe/yii2-gravatar" />
+      <path value="$PROJECT_DIR$/vendor/2amigos/yii2-tinymce-widget" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/punycode" />
+      <path value="$PROJECT_DIR$/vendor/codeception/phpunit-wrapper" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/typeahead.js" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/codeception/stub" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/yii2-pjax" />
+      <path value="$PROJECT_DIR$/vendor/codeception/specify" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/inputmask" />
+      <path value="$PROJECT_DIR$/vendor/codeception/base" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/jquery" />
+      <path value="$PROJECT_DIR$/vendor/codeception/verify" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/almasaeed2010/adminlte" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="kurs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kurs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kurs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kurs" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kurs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kurs" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kurs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kurs" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kurs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kurs" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kurs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kurs" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kurs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kurs" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kurs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kurs" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kurs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kurs" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kurs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kurs" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kurs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kurs" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="edutech" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kurs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kurs" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="edutech" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kurs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kurs" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="edutech" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10fcf7f8-dfc7-4396-a79d-21884c3b6972" name="Default Changelist" comment="" />
+      <created>1568439005260</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568439005260</updated>
+      <workItem from="1568439006717" duration="5672000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5672000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="920" column="6" selection-start-line="920" selection-start-column="6" selection-end-line="920" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+            <element signature="n#div#1;n#!!top" />
+            <element signature="n#div#2;n#!!top" />
+            <element signature="n#div#3;n#!!top" />
+            <element signature="n#div#4;n#!!top" />
+            <element signature="n#div#5;n#!!top" />
+            <element signature="n#div#6;n#!!top" />
+            <element signature="n#div#7;n#!!top" />
+            <element signature="n#div#8;n#!!top" />
+            <element signature="n#div#9;n#!!top" />
+            <element signature="n#div#10;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
+          <folding>
+            <element signature="n#header#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/edutech/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="1061" column="12" selection-start-line="1061" selection-start-column="12" selection-end-line="1233" selection-end-column="18" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#8;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#10;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="172" column="6" selection-start-line="172" selection-start-column="6" selection-end-line="172" selection-end-column="6" />
+          <folding>
+            <element signature="n#footer#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/AppAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/edutech/css/bootstrap-select.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/edutech/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="357" column="21" selection-start-line="357" selection-start-column="21" selection-end-line="357" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/edutech/css/flaticon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -16,15 +16,12 @@ use Yii;
  */
 class Lang extends \yii\db\ActiveRecord
 {
-    const STATUS_ACTIVE=1;
-    const STATUS_INACTIVE=0;
-    const STATUS_DELETE=9;
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'bcms_text_translate';
+        return 'in_text_translate';
     }
 
     /**
@@ -33,7 +30,7 @@ class Lang extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['slug', 'text'], 'required'],
+            [['lang', 'text'], 'required'],
             [['status', 'updated_date'], 'integer'],
             [['lang', 'slug', 'text'], 'string', 'max' => 2048],
         ];
@@ -52,15 +49,6 @@ class Lang extends \yii\db\ActiveRecord
             'status' => 'Status',
             'updated_date' => 'Updated Date',
         ];
-    }
-
-    public function beforeSave($insert){
-        if($insert){
-            // $this->lang = 'uz-UZ';
-        }else{
-            $this->updated_date = time();
-        }
-        return parent::beforeSave($insert);
     }
 
     public static function t($message)

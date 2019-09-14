@@ -1,6 +1,8 @@
 <?php
 use yii\helpers\Html;
-
+use app\models\Lang;
+use app\models\dilshod\User;
+use app\models\ShopcartOrders;
 /* @var $this \yii\web\View */
 /* @var $content string */
 ?>
@@ -18,7 +20,39 @@ use yii\helpers\Html;
         <div class="navbar-custom-menu">
 
             <ul class="nav navbar-nav">
+<li class="dropdown notifications-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="label label-warning"><?=User::getNew()?></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header"><?=Lang::t("Ma'lumot")?></li>
+                        <li>
+                            <!-- inner menu: contains the actual data -->
+                            <ul class="menu">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-shopping-cart text-green"></i> <?=ShopcartOrders::shop()?> ta sotib olishga urinish
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-users text-aqua"></i> <?=User::getNew()?> ta Yangi userlar mavjud
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-users text-red"></i> <?=User::getNot()?> ta tasdiqlanmagan userlar
+                                    </a>
+                                </li>
 
+                                
+                            </ul>
+                        </li>
+                        <!-- <li class="footer"><a href="#">View all</a></li> -->
+                    </ul>
+                </li>
 
 
                 <!-- User Account: style can be found in dropdown.less -->
@@ -26,15 +60,19 @@ use yii\helpers\Html;
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="/web/<?=Yii::$app->user->identity->image?>" class="user-image" alt="User Image"/>
-                        <span id="och" class="hidden-xs"><?//=Yii::$app->user->identity->fio?></span>
+                        <span id="och" class="hidden-xs"><?=Yii::$app->user->identity->fio?></span>
                     </a>
                     <ul class="dropdown-menu">
+
                         <!-- User image -->
                         <li class="user-header">
                             <img src="/web/<?=Yii::$app->user->identity->image?>" class="img-circle"
                                  alt="User Image"/>
 
-                            
+                            <p>
+                                <?=Yii::$app->user->identity->fio?>
+                                <small><?=Yii::$app->user->identity->tel?></small>
+                            </p>
                         </li>
 
                         <li class="user-footer">

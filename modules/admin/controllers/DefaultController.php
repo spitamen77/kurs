@@ -6,20 +6,10 @@ use yii\web\Controller;
 use Yii;
 
 /**
- * Default controller for the `invest` module
+ * Default controller for the `admin` module
  */
 class DefaultController extends Controller
 {
-	public function beforeAction($action)
-	{
-		
-		if(Yii::$app->user->isGuest) {
-			$this->redirect(['/admin/site/login']);
-		}
-		// else exit("else");
-		return parent::beforeAction($action);
-		
-	}
 
     /**
      * Renders the index view for the module

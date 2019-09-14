@@ -3,9 +3,9 @@
 namespace app\modules\admin\controllers;
 
 use Yii;
-// use app\models\dilshod\TextTranslate;
+use app\models\dilshod\TextTranslate;
 use app\models\Lang;
-use app\models\search\TextTranslateSearch;
+use app\models\dilshod\TextTranslateSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -15,13 +15,7 @@ use yii\filters\VerbFilter;
  */
 class TextTranslateController extends Controller
 {
-    public function beforeAction($action)
-    {
-        if (Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-        return parent::beforeAction($action);
-    }
+    
     /**
      * {@inheritdoc}
      */
@@ -72,11 +66,11 @@ class TextTranslateController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Lang();
+        $model = new TextTranslate();
 
         if ($model->load(Yii::$app->request->post())) {
             $model->lang = 'uz-UZ';
-            $slug = Lang::find()->where(['slug'=>$model->slug])->one();
+            $slug = TextTranslate::find()->where(['slug'=>$model->slug])->one();
             if (!empty($slug)) {
                 return $this->render('create', [
                     'model' => $model,
@@ -128,13 +122,13 @@ class TextTranslateController extends Controller
         if ($_GET['val']=="") {
             return "value";
         }
-        $uzb  = Lang::find()->where(['slug'=>$_GET['til'], 'lang'=>$_GET['select']])->asArray()->one(); //sluig ni olyapman
+        $uzb  = TextTranslate::find()->where(['slug'=>$_GET['til'], 'lang'=>$_GET['select']])->asArray()->one(); //sluig ni olyapman
         if (!empty($uzb)) {
             return 'dublicate';
         }
         else {
             //var_dump($_GET['til']);exit;
-            $model = new Lang();
+            $model = new TextTranslate();
             $model->slug = $_GET['til'];
             $model->lang = $_GET['select'];
             $model->text = $_GET['val'];
@@ -153,7 +147,7 @@ class TextTranslateController extends Controller
     public function actionDelete($id)
     {
          $text = $this->findModel($id);
-         $slug = Lang::find()->where(['slug'=>$text->slug])->all();
+         $slug = TextTranslate::find()->where(['slug'=>$text->slug])->all();
          foreach ($slug as $key => $value) {
              $value->delete();
          }
@@ -194,7 +188,7 @@ class TextTranslateController extends Controller
      */
     protected function findModel($id)
     {
-        if (($model = Lang::findOne($id)) !== null) {
+        if (($model = TextTranslate::findOne($id)) !== null) {
             return $model;
         }
 

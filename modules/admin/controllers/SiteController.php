@@ -7,7 +7,7 @@ use Yii;
 use app\models\LoginForm;
 
 /**
- * Site controller for the `invest` module
+ * Site controller for the `admin` module
  */
 class SiteController extends Controller
 {
@@ -16,15 +16,7 @@ class SiteController extends Controller
      * Renders the index view for the module
      * @return string
      */
-    public function beforeAction($action)
-    {
-        
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-        return parent::beforeAction($action);
-        
-    }
+    
 
 
     public function actionLogin()

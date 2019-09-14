@@ -46,7 +46,8 @@ $this->title = 'Profil';
                 }
             ],
         'tel',
-        'email'
+        'email',
+      
             // 'title',
             // 'slug',
             // 'template_id',
