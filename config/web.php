@@ -54,6 +54,7 @@ $config = [
             'rules' => [
                 '/' => 'site/index',
                 'login' => 'site/login',
+                'admin' => 'admin/default',
                 '<controller:\w+>/' => '<controller>/index',
                '<controller:\w+>/<action:(\w|-)+>' => '<controller>/<action>',
                '<module:\w+>/<controller:\w+>/<action:(\w|-)+>' => '<module>/<controller>/<action>',

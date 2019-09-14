@@ -1,3 +1,8 @@
+<?php
+use app\models\maxpirali\Menu;
+use yii\helpers\Url;
+use app\models\Lang;
+?>
 <!-- Footer ______________________________ -->
 <footer>
     <div class="top-footer">
@@ -34,15 +39,8 @@
                 <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 footer-quick-link">
                     <h4>Quick link</h4>
                     <ul>
-                        <li><a href="course-v2.html" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> Our Courses</a></li>
-                        <li><a href="blog-v1.html" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> News/Blog</a></li>
-                        <li><a href="event.html" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> Event</a></li>
-                        <li><a href="our-teacher.html" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> Team Member</a></li>
-                        <li><a href="faq.html" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> Privacy Policy</a></li>
-                        <li><a href="faq.html" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> Help</a></li>
-                        <li><a href="contact-us.html" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> Support</a></li>
-                        <li><a href="#" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> Education</a></li>
-                        <li><a href="our-teacher.html" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> Teacher</a></li>
+                        <?php PrintMenu2(Menu::menus()); ?>
+                       
                     </ul>
                 </div> <!-- /.footer-quick-link -->
 
@@ -159,7 +157,7 @@
     </div> <!-- /.top-footer -->
 
     <div class="bottom-footer">
-        <p>Copyright 2016 &copy; <a href="http://themeforest.net/user/themazine/portfolio" class="tran3s" target="_blank">TheMazine</a> <span>|</span> Designed by <span class="p-color">Mahfuz Riad</span></p>
+        <p>Copyright 2019 &copy; <a href="websar.uz" class="p-color" target="_blank">Websar.uz</a> <span></p>
     </div> <!-- /.bottom-footer -->
 </footer>
 
@@ -171,3 +169,15 @@
 <div id="loader-wrapper">
     <div id="loader"></div>
 </div>
+<?php function PrintMenu2($menu){ ?>
+    <? foreach ($menu as $value) { ?>
+        <li><a href="<?=Url::to(['site/index', 'slug' => $value['slug']])?>"><i class="fa fa-caret-right" aria-hidden="true"></i>
+            <?=$value['title']?></a>
+            <?// if ($value['children']) { ?>
+                <!-- <ul class="sub-menu"> -->
+                    <? //PrintMenu($value['children']); ?>
+                <!-- </ul> -->
+            <?//} ?>
+        </li>
+        <? } ?>  
+   <? }?>

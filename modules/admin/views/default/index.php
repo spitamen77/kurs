@@ -52,13 +52,8 @@ if (!Yii::$app->user->identity){
                         'attribute'=>'username',
                         'label'=>'Foydalanuvchi:'
                     ],
-                    'fio',
-                    [
-                        'attribute'=>'birthdate',
-                        'value'=>function($model){
-                            return date('d-m-Y', $model->birthdate);
-                        }
-                    ],
+                    // 'fio',
+                   
                     'tel',
                     'email'
                 ],

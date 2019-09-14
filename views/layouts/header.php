@@ -3,8 +3,11 @@ use yii\bootstrap\NavBar;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use app\models\maxpirali\Menu;
+use yii\helpers\Url;
+use app\models\Lang;
 // use app\models\dilshod\Menu;
 
+// $menu = Menu::menus();
 ?>
 
 <!-- Header _________________________________ -->
@@ -46,7 +49,7 @@ use app\models\maxpirali\Menu;
                 <div class="logo float-left"><a href="index.html" style="vertical-align:middle;"><img src="" alt="LOGO"></a></div>
 
                 <form action="#" class="float-right">
-                    <input type="text" placeholder="Search">
+                    <input type="text" placeholder="<?=Lang::t('Search')?>">
                     <button><i class="fa fa-search-minus" aria-hidden="true"></i></button>
                 </form>
 
@@ -64,47 +67,11 @@ use app\models\maxpirali\Menu;
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="dropdown-holder current-page-item"><a href="index.html">Home</a>
-                                <ul class="sub-menu">
-                                    <li><a href="index.html" class="tran3s">Home Version One</a></li>
-                                    <li><a href="index-2.html" class="tran3s">Home Version Two</a></li>
-                                </ul>
+                            <li class="dropdown-holder current-page-item"><a href="<?=Url::to('/')?>">Asosiy</a>
+                
                             </li>
-                            <li class="dropdown-holder"><a href="about-us.html">About</a>
-                                <ul class="sub-menu">
-                                    <li><a href="about-us.html" class="tran3s">About Us V1</a></li>
-                                    <li><a href="about-us-v2.html" class="tran3s">About Us V2</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-holder"><a href="#">Event</a>
-                                <ul class="sub-menu">
-                                    <li><a href="event.html" class="tran3s">Event Single</a></li>
-                                    <li><a href="event-details.html" class="tran3s">Event Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-holder"><a href="#">courses</a>
-                                <ul class="sub-menu">
-                                    <li><a href="course-v1.html" class="tran3s">Course Version One</a></li>
-                                    <li><a href="course-v2.html" class="tran3s">Course Version Two</a></li>
-                                    <li><a href="course-details.html" class="tran3s">Course Details Page</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-holder"><a href="#">features</a>
-                                <ul class="sub-menu">
-                                    <li><a href="our-teacher.html" class="tran3s">Our Teacher</a></li>
-                                    <li><a href="teacher-profile.html" class="tran3s">Teacher Profile</a></li>
-                                    <li><a href="faq.html" class="tran3s">faq</a></li>
-                                    <li><a href="404.html" class="tran3s">Error Page</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-holder"><a href="#">blog</a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-v1.html" class="tran3s">blog Version One</a></li>
-                                    <li><a href="blog-v2.html" class="tran3s">blog Version Two</a></li>
-                                    <li><a href="blog-details.html" class="tran3s">blog Details Page</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact-us.html">contact</a></li>
+                            <?php PrintMenu(Menu::menus()); ?>
+                          
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav>
@@ -112,3 +79,14 @@ use app\models\maxpirali\Menu;
         </div> <!-- /.main-menu-wrapper -->
     </div>
 </header>
+<?php function PrintMenu($menu){ ?>
+    <? foreach ($menu as $value) { ?>
+        <li class="dropdown-holder"><a href="<?=Url::to(['site/index', 'slug' => $value['slug']])?>"><?=$value['title']?></a>
+            <?// if ($value['children']) { ?>
+                <!-- <ul class="sub-menu"> -->
+                    <? //PrintMenu($value['children']); ?>
+                <!-- </ul> -->
+            <?//} ?>
+        </li>
+        <? } ?>  
+   <? }?>
