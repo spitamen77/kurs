@@ -43,7 +43,7 @@ use app\models\maxpirali\Menu;
     <div class="container">
         <div class="main-menu-wrapper clear-fix">
             <div class="container">
-                <div class="logo float-left"><a href="index.html" style="vertical-align:middle;"><img src="images/logo/logo.png" alt="LOGO"></a></div>
+                <div class="logo float-left"><a href="index.html" style="vertical-align:middle;"><img src="" alt="LOGO"></a></div>
 
                 <form action="#" class="float-right">
                     <input type="text" placeholder="Search">
