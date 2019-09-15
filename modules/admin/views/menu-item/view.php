@@ -60,7 +60,7 @@ $this->params['breadcrumbs'][] = $this->title;
                },
             ],
             'sale',
-             'pieces',
+             // 'pieces',
             [
              'attribute' =>  Lang::t("Rasm"),
              'format' => 'raw',

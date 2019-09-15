@@ -22,20 +22,18 @@ use app\models\Lang;
                     <li><span class="icon round-border"><i class="ficon flaticon-multimedia"></i></span> <a href="" class="tran3s">info@edutech.com</a></li>
                     <li><span class="icon round-border"><i class="ficon flaticon-technology"></i></span> <a href="" class="tran3s">+8801712570051</a></li>
                     <li><span class="icon round-border"><i class="ficon flaticon-translation"></i></span>
-                        <select class="">
-                            <option><?= Html::a(Lang::t('Ru'), ['site/lang',['id'=>'uz-UZ', 'url'=>Url::current()]]) ?></option>
-                            <option><?= Html::a(Lang::t('Uz'), ['site/lang',['id'=>'uz-UZ', 'url'=>Url::current()]]) ?></option>
-                           
-                        </select>
+                        <?= Html::a(Lang::t('Uz'), ['site/lang',['id'=>'uz-UZ', 'url'=>Url::current()]]) ?>
+                                <span> | </span>
+                                <?= Html::a(Lang::t('Ru'), ['site/lang',['id'=>'ru-RU', 'url'=>Url::current()]]) ?>
                     </li>
-                </ul><?= Html::a(Lang::t('Ru'), ['site/lang',['id'=>'ru-RU', 'url'=>Url::current()]]) ?>
+                </ul>
             </div> <!-- /.left-side -->
             <div class="right-side float-right">
                 <ul>
                     <li><a href="#" class="tran3s round-border icon"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                     <li><a href="#" class="tran3s round-border icon"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                     <li><a href="#" class="tran3s round-border icon"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                    <li><a href="#" class="tran3s round-border icon"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="tran3s round-border icon"><i class="fa fa-paper-plane" aria-hidden="true"></i></a></li>
                 </ul>
             </div> <!-- /.right-side -->
         </div>
@@ -67,7 +65,7 @@ use app\models\Lang;
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="dropdown-holder current-page-item"><a href="<?=Url::to('/')?>">Asosiy</a>
+                            <li class="dropdown-holder current-page-item"><a href="<?=Url::to('/')?>"><?=Lang::t('bosh sahifa')?></a>
                 
                             </li>
                             <?php PrintMenu(Menu::menus()); ?>

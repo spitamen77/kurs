@@ -55,7 +55,6 @@ $this->params['breadcrumbs'][] = $this->title;
              //'status',
             'price',
             'sale',
-            'pieces',
             [
               'attribute' => 'status',
               'filter' => false,

@@ -47,7 +47,7 @@ class MenuItem extends \yii\db\ActiveRecord
         return [
             [['menu_id', 'title',  'slug', ], 'required'],
             ['slug', 'unique', 'message' => 'Slug mavjud'],
-            [['menu_id', 'views', 'status', 'price', 'sale','pieces', 'user_id', 'created_date', 'updated_date'], 'integer'],
+            [['menu_id', 'views', 'status', 'price', 'sale', 'user_id', 'created_date', 'updated_date'], 'integer'],
             [['text'], 'string'],
             [['title', 'photo', 'slug'], 'string', 'max' => 128],
             [['short'], 'string', 'max' => 255],

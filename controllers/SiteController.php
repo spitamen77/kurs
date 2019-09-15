@@ -219,15 +219,6 @@ class SiteController extends Controller
     }
 
 
-    public function actionDelete()
-    {
-        $good_id = $_GET['good_id'];
-        $good = ShopcartGoods::find()->where(['good_id'=>$good_id])->one();
-        $good->delete();
-        Yii::$app->response->format='json';
-        return ['result' => 'success'];
-    }
-
     public function actionConfirm()
     {
         return $this->render('confirm');

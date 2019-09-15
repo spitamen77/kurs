@@ -24,8 +24,6 @@ $this->params['breadcrumbs'][] = 'Update';
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-
-
     <?= $form->field($model, 'short')->textInput(['maxlength' => true]) ?>
 
    <?= $form->field($model, 'text')->widget(TinyMce::className(), [
@@ -48,10 +46,9 @@ $this->params['breadcrumbs'][] = 'Update';
     <?= $form->field($model, 'price')->textInput(['class' => 'your form-control']) ?>
 
     <?= $form->field($model, 'sale')->textInput(['class' => 'your form-control']) ?>
-    <?= $form->field($model, 'pieces')->textInput(['class' => 'your form-control']) ?>
-    <?= $form->field($model, 'status')->dropDownList($model->getStatus());?>
     </div>
     <?= $form->field($model, 'photo')->fileInput() ?>
+    <?= $form->field($model, 'status')->dropDownList($model->getStatus());?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
