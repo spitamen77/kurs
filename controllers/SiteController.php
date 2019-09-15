@@ -26,17 +26,15 @@ class SiteController extends Controller
      */
     public function beforeAction($action)
     {
-        $cookies = Yii::$app->request->cookies;
-        if (($cookie = $cookies->get('language')) !== null) {
-            Yii::$app->language = $cookie->value;
+        // $cookies = Yii::$app->request->cookies;
+        // if (($cookie = $cookies->get('language')) !== null) {
+        //     exit('asdsad');
+        //     Yii::$app->language = $cookie->value;
+        // }
+        if(isset($_COOKIE['language'])) {
+            Yii::$app->language = $_COOKIE['language'];
         }
-//        if (Yii::$app->user->isGuest) {
-//            if((Yii::$app->controller->action->id!='login') &&
-//            (Yii::$app->controller->action->id!='signup')){
-//            $model = new LoginForm();
-//            return $this->redirect(['login', 'model' => $model]);
-//        }
-//        }
+
         return parent::beforeAction($action);
     }
 
@@ -162,59 +160,6 @@ class SiteController extends Controller
     }
 
 
-
-    // public function actionAddress()
-    // {
-    //     $id = ShopcartOrders::getId();
-    //     $model=ShopcartOrders::find()->where(['order_id'=>$id])->one();
-
-    //     if ($model->load(Yii::$app->request->post())) {   
-    //     $model->status=1;  
-    //     $model->address=$model->address." ,".$model->remark;
-    //     $model->remark=NULL;
-
-    //     if ($model->save())
-    //         return $this->render('sucsess', [
-    //         'model' => $model,
-    //     ]);
-    //     }
-    //     return $this->render('address', [
-    //         'model' => $model,
-    //     ]);
-    // }
-
-
-    public function actionComplete()
-    {
-        $id = ShopcartOrders::getId();
-        if (empty($id)) {
-        return $this->goHome();
-         }
-        $model=ShopcartOrders::find()->where(['order_id'=>$id])->one();
-        $user  = User::find()->where(['id'=>$model->auth_user])->one();
-
-      
-        $model->status=1;  
-        $model->remark=$user->remark;
-        $model->address=$user->address.",".$model->remark;
-        $model->phone=$user->tel;
-        $model->name=$user->username;
-        $model->email=$user->email;
-        // $model->fio=$user->fio;
-        // $model->remark=NULL;
-        
-        if ($model->save())
-            return $this->render('sucsess', [
-            'model' => $model,
-        ]);
-        exit(Lang::t('error'));
-       
-    }
-
-
-
-
-
     /**
      * Displays about page.
      *
@@ -225,18 +170,10 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
-
-
-    
-
-
      public function actionSucsess(){
 
         return $this->render('sucsess');
     }
-
-
-
 
     public function actionSignup()
     {
@@ -281,55 +218,6 @@ class SiteController extends Controller
         ]);
     }
 
-    public function actionSale()
-    {
-        $item_id = $_GET['item'];
-        $quantity = ($_GET['quantity'])?$_GET['quantity']:1;
-        $good = ShopcartGoods::saved($item_id, $quantity);
-        if ($good=="success") {
-            $order = ShopcartOrders::find()->where(['access_token'=>Yii::$app->session->getId()])->one();
-            Yii::$app->response->format='json';
-            return ['result' => 'success','cost'=>$order->cost, 'count'=>$order->count];
-        }
-        else {
-            Yii::$app->response->format='json';
-            return ['result' => 'error'];
-        }
-    }
-
-    public function actionCart()
-    {
-        $order = ShopcartOrders::goods();
-        // return $this->render('card');
-        return $this->render('card', [
-            'items' => $order,
-        ]);
-    }
-     public function actionPricelist(){
-
-        $price = MenuItem::find()->where(['status'=>[1,0]])->all();
-
-        return $this->render('pricelist',[
-            'items'=>$price,
-        ]);
-    }
-
-    public function actionHistory(){
-
-         $model = ShopcartOrders::find()->where(['auth_user'=>Yii::$app->user->identity->id])->all();
-         // echo "<pre>"; var_dump($model); die;
-         return $this->render('history',[
-            'history'=>$model
-         ]);
-
-        // $history = MenuItem::find()->all();
-
-        // return $this->render('history',[
-        //     'history'=>$history,
-        // ]);
-    }
-
-
 
     public function actionDelete()
     {
@@ -359,26 +247,15 @@ class SiteController extends Controller
             'model' => $new,
         ]);
     }
-    
-    // public function actionLoogin()
-    // {
-
-    //     $model = new LoginForm();
-    //     if ($model->load(Yii::$app->request->post()) && $model->login()) {
-    //         return $this->redirect(['index']);
-    //     }
-    //     return $this->render('loogin', [
-    //         'model' => $model,
-    //     ]);
-    // }
 
     public function actionLang(){
         $get = Yii::$app->request->get();
-        $cookies = Yii::$app->response->cookies;
-        $cookies->add(new \yii\web\Cookie([
-            'name' => 'language',
-            'value' => $get[1]['id'],
-        ]));
+        setcookie('language', $get[1]['id'], time() + (86400 * 30*7), "/");
+        // $cookies = Yii::$app->response->cookies;
+        // $cookies->add(new \yii\web\Cookie([
+        //     'name' => 'language',
+        //     'value' => $get[1]['id'],
+        // ]));
         // echo "<pre>"; var_dump($vaa); die;
         if($get){
             return $this->redirect($get[1]['url']);

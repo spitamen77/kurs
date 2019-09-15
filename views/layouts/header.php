@@ -22,13 +22,13 @@ use app\models\Lang;
                     <li><span class="icon round-border"><i class="ficon flaticon-multimedia"></i></span> <a href="" class="tran3s">info@edutech.com</a></li>
                     <li><span class="icon round-border"><i class="ficon flaticon-technology"></i></span> <a href="" class="tran3s">+8801712570051</a></li>
                     <li><span class="icon round-border"><i class="ficon flaticon-translation"></i></span>
-                        <select class="selectpicker">
-                            <option>English</option>
-                            <option>Spanish</option>
-                            <option>L'italiano</option>
+                        <select class="">
+                            <option><?= Html::a(Lang::t('Ru'), ['site/lang',['id'=>'uz-UZ', 'url'=>Url::current()]]) ?></option>
+                            <option><?= Html::a(Lang::t('Uz'), ['site/lang',['id'=>'uz-UZ', 'url'=>Url::current()]]) ?></option>
+                           
                         </select>
                     </li>
-                </ul>
+                </ul><?= Html::a(Lang::t('Ru'), ['site/lang',['id'=>'ru-RU', 'url'=>Url::current()]]) ?>
             </div> <!-- /.left-side -->
             <div class="right-side float-right">
                 <ul>
