@@ -18,21 +18,22 @@ use app\models\Lang;
         <div class="container">
             <div class="left-side float-left">
                 <ul>
-                    <li><span class="icon round-border"><i class="ficon flaticon-signs"></i></span> <a href="" class="tran3s">45/12 Best Avenue Street, UK 2450, US</a></li>
-                    <li><span class="icon round-border"><i class="ficon flaticon-multimedia"></i></span> <a href="" class="tran3s">info@edutech.com</a></li>
-                    <li><span class="icon round-border"><i class="ficon flaticon-technology"></i></span> <a href="" class="tran3s">+8801712570051</a></li>
+                    <li><span class="icon round-border"><i class="ficon flaticon-signs"></i></span> <a href="#" class="tran3s">Алишер Навоий номидаги миллий боғ енида</a></li>
+                    <li><span class="icon round-border"><i class="ficon flaticon-multimedia"></i></span> <a href="mailto:outcometree101@gmail.com" class="tran3s">outcometree101@gmail.com</a></li>
+                    <li><span class="icon round-border"><i class="ficon flaticon-technology"></i></span> <a href="tel:+998942996949" class="tran3s">+998942996949</a></li>
                     <li><span class="icon round-border"><i class="ficon flaticon-translation"></i></span>
                         <?= Html::a(Lang::t('Uz'), ['site/lang',['id'=>'uz-UZ', 'url'=>Url::current()]]) ?>
-                                <span> | </span>
-                                <?= Html::a(Lang::t('Ru'), ['site/lang',['id'=>'ru-RU', 'url'=>Url::current()]]) ?>
+                        <span> | </span>
+                        <?= Html::a(Lang::t('Ru'), ['site/lang',['id'=>'ru-RU', 'url'=>Url::current()]]) ?>
+                        <span> | </span>
+                        <?= Html::a(Lang::t('En'), ['site/lang',['id'=>'en-US', 'url'=>Url::current()]]) ?>
                     </li>
                 </ul>
             </div> <!-- /.left-side -->
             <div class="right-side float-right">
                 <ul>
                     <li><a href="#" class="tran3s round-border icon"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#" class="tran3s round-border icon"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#" class="tran3s round-border icon"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    
                     <li><a href="#" class="tran3s round-border icon"><i class="fa fa-paper-plane" aria-hidden="true"></i></a></li>
                 </ul>
             </div> <!-- /.right-side -->
@@ -44,7 +45,7 @@ use app\models\Lang;
     <div class="container">
         <div class="main-menu-wrapper clear-fix">
             <div class="container">
-                <div class="logo float-left"><a href="index.html" style="vertical-align:middle;"><img src="" alt="LOGO"></a></div>
+                <div class="logo float-left"><a href="index.html" style="vertical-align:middle;"><img src="/themes/edutech/images/logo3.png" alt="LOGO"></a></div>
 
                 <form action="#" class="float-right">
                     <input type="text" placeholder="<?=Lang::t('Search')?>">

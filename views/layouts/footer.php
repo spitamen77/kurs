@@ -15,9 +15,8 @@ use app\models\Lang;
                     <a href="our-teacher.html" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> Team Member</a>
                     <ul>
                         <li><a href="#" class="tran3s round-border icon"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#" class="tran3s round-border icon"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#" class="tran3s round-border icon"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#" class="tran3s round-border icon"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                       
+                        <li><a href="#" class="tran3s round-border icon"><i class="fa fa-paper-plane" aria-hidden="true"></i></a></li>
                     </ul>
                 </div> <!-- /.footer-about -->
 
@@ -26,13 +25,13 @@ use app\models\Lang;
                     <ul>
                         <li>
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            <a href="mailto:helpneed@edutech.com" class="tran3s">helpneed@edutech.com</a>
+                            <a href="mailto:outcometree101@gmail.com" class="tran3s">outcometree101@gmail.com</a>
                         </li>
                         <li>
                             <i class="fa fa-phone" aria-hidden="true"></i>
-                            <a href="tel:+8801712570051" class="tran3s">+8801712570051</a>
+                            <a href="tel:+998942996949" class="tran3s">+998942996949</a>
                         </li>
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Edine rode,1234 Plot/RS ,CA</li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Алишер Навоий номидаги миллий боғ енида</li>
                     </ul>
                 </div> <!-- /.footer-contact -->
 
@@ -156,9 +155,7 @@ use app\models\Lang;
         </div> <!-- /.container -->
     </div> <!-- /.top-footer -->
 
-    <div class="bottom-footer">
-        <p>Copyright 2019 &copy; <a href="websar.uz" class="p-color" target="_blank">Websar.uz</a> <span></p>
-    </div> <!-- /.bottom-footer -->
+   
 </footer>
 
 <!-- Scroll Top Button -->
@@ -181,3 +178,9 @@ use app\models\Lang;
         </li>
         <? } ?>  
    <? }?>
+   <script>
+window.replainSettings = { id: '5da0916d-0c87-4369-8595-7f2bab0612f7' };
+(function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
+var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+})('https://widget.replain.cc/dist/client.js');
+</script>

@@ -60,4 +60,9 @@ class Rasm extends \yii\db\ActiveRecord
         '0' => Lang::t('Nofaol'),
     ];
     }
+
+    public function getPhoto()
+    {
+        return $this->hasOne(Photo::className(), ['id' => 'photo_id']);
+    }
 }

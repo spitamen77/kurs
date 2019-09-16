@@ -208,7 +208,7 @@ footer .footer-event .item h6:hover,.page-breadcrum ul li:last-child,.page-bread
 .course-details-page .course-details-content .course-curriculum .course-curriculum-panel .panel-body a:hover,
 header .top-header div>ul>li .ficon:before,.popular-course .course-item-wrapper .item:hover .text h4 a,
 .popular-course .course-item-wrapper .single-course-item:hover .text h4 a {
-  color:#11bd72;
+  color:#017536;
 }
 .p-color-bg,header .top-header div.right-side>ul>li a:hover,
 .main-menu-wrapper,footer .top-footer .footer-about ul li a:hover,
@@ -222,7 +222,7 @@ header .top-header div>ul>li .ficon:before,.popular-course .course-item-wrapper 
 .blog-details-page .blog-details-page-content .main-post-content .admin-text ul.share-icon li a:hover,
 .blog-details-page .blog-details-page-content .main-post-content .single-comment .reply:hover,
 .course-details-page .course-details-content .take-course-button:hover {
-  background: #11bd72;
+  background: #017536;
 }
 .theme-bg-color {
   background: #ededed;
@@ -813,12 +813,12 @@ header.inner-header .top-header {
 .popular-course .course-item-wrapper .text {
   background: #fff;
   text-align: center;
-  border-bottom: 12px solid #fbdada;
+  border-bottom: 12px solid #75a77b;
   position: relative;
 }
 .popular-course .course-item-wrapper .item:hover .text,
 .popular-course .course-item-wrapper [class*="col-"]:hover .text {
-  border-color: #cd2122;
+  border-color: #017536;
 }
 .popular-course .course-item-wrapper .text h4 a {
   text-transform: uppercase;
@@ -1017,8 +1017,8 @@ header.inner-header .top-header {
           transition: all .4s ease-in-out;
 }
 .event-section .single-event:before {
-  border-left:1px solid #cd2122;
-  border-right: 1px solid #cd2122;
+  border-left:1px solid #017536;
+  border-right: 1px solid #017536;
   transform: scale(1,0);
     -webkit-transform:scale(1,0);
     -moz-transform:scale(1,0);
@@ -1026,8 +1026,8 @@ header.inner-header .top-header {
     -o-transform:scale(1,0);
 }
 .event-section .single-event:after {
-  border-top:1px solid #cd2122;
-  border-bottom: 1px solid #cd2122;
+  border-top:1px solid #017536;
+  border-bottom: 1px solid #017536;
   transform: scale(0,1);
     -webkit-transform:scale(0,1);
     -moz-transform:scale(0,1);
@@ -1140,7 +1140,7 @@ header.inner-header .top-header {
   padding-bottom: 19px;
 }
 .latest-news .single-post:hover .text-wrapper .text {
-  background: #cd2122;
+  background: #017536;
 }
 .latest-news .single-post:hover .text-wrapper .text a,
 .latest-news .single-post:hover .text-wrapper .text p {
@@ -1309,7 +1309,7 @@ header.inner-header .top-header {
 }
 /*======================= Footer ==============*/
 footer {
-  background: #000;
+  background: #5c9e3a;
   padding-top: 88px;
 }
 footer .top-footer h4,footer .top-footer p,footer .top-footer a,footer .top-footer ul li,footer .top-footer h6 {
@@ -1349,7 +1349,8 @@ footer .top-footer .footer-about ul li {
 footer .top-footer .footer-about ul li a {
   width: 50px;
   height:50px;
-  background: #212121;
+  /*background: #212121;*/
+  border: 1px solid #212121;
   line-height: 50px;
   text-align: center;
   font-size: 16px;
@@ -1377,7 +1378,7 @@ footer .top-footer .footer-contact ul li i {
   background: #fff;
   line-height: 35px;
   text-align: center;
-  color:#cd2122;
+  color:#5c9e3a;
   font-size: 16px;
   position: absolute;
   top:-17px;
