@@ -1,5 +1,7 @@
 <?php
 
+use yii\helpers\Url;
+use app\models\Lang;
 /* @var $this yii\web\View */
 use app\models\dilshod\Photo;
 $this->title = 'O`quv kursi';
@@ -452,52 +454,27 @@ $images = Photo::getPhoto();
 <div class="latest-news wow fadeInUp theme-bg-color">
     <div class="container">
         <div class="theme-title">
-            <h2>latest news</h2>
+            <h2><?=Lang::t('latest news')?></h2>
             <p>Something for education news,latest news feed</p>
         </div>
 
         <div class="post-wrapper row">
+            <?php foreach ($news as $key => $value) : ?>
             <div class="single-post wow fadeInUp col-lg-4 col-md-4 col-sm-6 col-xs-6">
                 <div class="img-holder">
-                    <div class="date wow fadeInUp p-color-bg">12 <span>Sep</span></div>
-                    <img src="images/blog/1.jpg" alt="Image">
-                    <a href="blog-details.html" class="tran4s"></a>
+                    <div class="date wow fadeInUp p-color-bg"><?=date("j",$value->created_date)?> <span><?=date("M",$value->created_date)?></span></div>
+                    <img src="<?=$value->photo?>" alt="<?=$value->translate->title?>">
+                    <a href="<?=Url::to('/?slug='.$value->template->slug.'&item_slug='.$value->slug)?>" class="tran4s"></a>
                 </div>
                 <div class="text-wrapper">
                     <div class="text tran4s">
-                        <a href="blog-details.html">New Chicago school budget </a>
-                        <p>Education is the process of facilitating learning. Knowledge kills, values, beliefs, and habits of a group of people are trans- ferred  </p>
+                        <a href="<?=Url::to('/?slug='.$value->template->slug.'&item_slug='.$value->slug)?>"><?=$value->translate->title?> </a>
+                        <p><?=$value->translate->short?> </p>
                     </div> <!-- /.text -->
                 </div> <!-- /.text-wrapper -->
             </div> <!-- /.single-post -->
-
-            <div class="single-post wow fadeInUp col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                <div class="img-holder">
-                    <div class="date wow fadeInUp p-color-bg">12 <span>Sep</span></div>
-                    <img src="images/blog/2.jpg" alt="Image">
-                    <a href="blog-details.html" class="tran4s"></a>
-                </div>
-                <div class="text-wrapper">
-                    <div class="text tran4s">
-                        <a href="blog-details.html">New Chicago school budget </a>
-                        <p>Education is the process of facilitating learning. Knowledge kills, values, beliefs, and habits of a group of people are trans- ferred  </p>
-                    </div> <!-- /.text -->
-                </div> <!-- /.text-wrapper -->
-            </div> <!-- /.single-post -->
-
-            <div class="single-post wow fadeInUp col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                <div class="img-holder">
-                    <div class="date wow fadeInUp p-color-bg">12 <span>Sep</span></div>
-                    <img src="images/blog/3.jpg" alt="Image">
-                    <a href="blog-details.html" class="tran4s"></a>
-                </div>
-                <div class="text-wrapper">
-                    <div class="text tran4s">
-                        <a href="blog-details.html">New Chicago school budget </a>
-                        <p>Education is the process of facilitating learning. Knowledge kills, values, beliefs, and habits of a group of people are trans- ferred  </p>
-                    </div> <!-- /.text -->
-                </div> <!-- /.text-wrapper -->
-            </div> <!-- /.single-post -->
+            <?php endforeach;?>    
+           
         </div> <!-- /.post-wrapper -->
     </div> <!-- /.container -->
 </div> <!-- /.latest-news -->

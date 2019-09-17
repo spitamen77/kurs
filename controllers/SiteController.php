@@ -106,7 +106,8 @@ class SiteController extends Controller
             }
             return $this->render('/'.$menu->template().'/pages');
         }
-        return $this->render('index');
+        $news = MenuItem::find()->where(['menu_id'=>8])->orderBy(['id'=>SORT_DESC])->limit(6)->all();
+        return $this->render('index',['news'=>$news]);
     }
 
     /**
