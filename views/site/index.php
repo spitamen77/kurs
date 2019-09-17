@@ -4,7 +4,7 @@ use yii\helpers\Url;
 use app\models\Lang;
 /* @var $this yii\web\View */
 use app\models\dilshod\Photo;
-$this->title = 'O`quv kursi';
+$this->title = Lang::t('Training center Outcome Tree');
 $images = Photo::getPhoto();
 
 ?>
@@ -454,7 +454,7 @@ $images = Photo::getPhoto();
 <div class="latest-news wow fadeInUp theme-bg-color">
     <div class="container">
         <div class="theme-title">
-            <h2><?=Lang::t('latest news')?></h2>
+            <h2><?=Lang::t('Latest news')?></h2>
             <p>Something for education news,latest news feed</p>
         </div>
 

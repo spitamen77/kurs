@@ -106,7 +106,9 @@ class SiteController extends Controller
             }
             return $this->render('/'.$menu->template().'/pages');
         }
-        $news = MenuItem::find()->where(['menu_id'=>8])->orderBy(['id'=>SORT_DESC])->limit(6)->all();
+        $news = MenuItem::find()->where(['menu_id'=>8])
+        ->andWhere(['status'=>MenuItem::STATUS_ACTIVE])
+        ->orderBy(['id'=>SORT_DESC])->limit(6)->all();
         return $this->render('index',['news'=>$news]);
     }
 
@@ -198,7 +200,11 @@ class SiteController extends Controller
         $item = $item[0];
         $item->views += 1;
         $item->save(false);
-        return $this->render('/'.$menu->template().'/page',['model'=>$item,'menu'=>$menu]);
+        $news = MenuItem::find()->where(['menu_id'=>8])
+        ->andWhere(['status'=>MenuItem::STATUS_ACTIVE])
+        ->andWhere(['not',['id'=>$item->id]])->orderBy(['id'=>SORT_DESC])
+        ->limit(3)->all();
+        return $this->render('/'.$menu->template().'/page',['model'=>$item,'menu'=>$menu,'news'=>$news]);
     }
     public function renderPages($slug)
     {
@@ -242,7 +248,7 @@ class SiteController extends Controller
 
     public function actionLang(){
         $get = Yii::$app->request->get();
-        setcookie('language', $get[1]['id'], time() + (86400 * 30*7), "/");
+        setcookie('language', $get[1]['id'], time() + (86400 * 30), "/");
         // $cookies = Yii::$app->response->cookies;
         // $cookies->add(new \yii\web\Cookie([
         //     'name' => 'language',

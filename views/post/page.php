@@ -1,4 +1,10 @@
-<?//= "<pre>";var_dump($model); ?>
+<?php
+use app\models\Lang;
+use yii\helpers\Url;
+ // echo "<pre>";var_dump($model); 
+$this->title= $model->translate->title;
+
+?>
 
 	<!-- Page Breadcrum __________________________ -->
 			<div class="page-breadcrum">
@@ -22,7 +28,7 @@
 							<div class="main-wrapper clear-fix">
 								<div class="img-holder">
 									<!-- <div class="date wow fadeInUp p-color-bg">12 <span>Sep</span></div> -->
-									<img src="<?=$model->photo?>" alt="Image">
+									<img src="<?=$model->photo?>" alt="><?=$model->translate->title?>">
 								</div>
 								<ul class="post-info">
 									<li><i class="fa fa-calendar" aria-hidden="true"></i><?=date("j-m-Y",$model->created_date)?></li>
@@ -31,27 +37,8 @@
 									<li><i class="fa fa-eye" aria-hidden="true"></i> <?=$model->views?></li>
 								</ul>
 								
-									<h3>New Chicago school budget 10k usd </h3>
-									<p>Education is the process of facilitating learning. Knowledge kills, values, beliefs, and habits of a group of people are transferred  Friendly Schools is a multi-component, evidence-based, whole-school initiative involving the whole-school community to build social skills, create supportive environments and significantly reduce bullying in school communities. The traditional “chalk and talk” method of teaching that’s persisted for hundreds of years is now acquiring inferior results
-										<br><br>
-									Education is the process of facilitating learning. Knowledge kills, values, beliefs, and habits of a group of people are transferred  Friendly Schools is a multi-component, evidence-based, whole-school initiative involving the whole-school community </p>
-									<div class="mark-text">
-										<p>Every year, Homeschool.com asks our readers to give their input in regards to their favorite homeschooling websites. We take this information, research the sites, and turn this raw infor- mation into a newsletter that we can share with our readers.</p>
-									</div> <!-- /.mark-text -->
-									<p>Education is the process of facilitating learning. Knowledge kills, values, beliefs, and habits of a group of people are transferred  Friendly Schools is a multi-component, evidence-based, whole-school initiative involving the whole-school community Friendly Schools is a multi-component, evidence-based, whole-school initiative involving the whole-school community to build social </p>
-
-									<div class="post-middle-list">
-										<h4>Tech Top 5 Homeschooling</h4>
-										<ol>
-											<li>The Top 100 Educational Websites of 2014 is sponsored by: Timeforme.com </li>
-											<li>Making the decision to take control of your children’s education can seem overwhelming</li>
-											<li>To help you make the decision that is right for you and your family, </li>
-											<li>101 Things To Do This Summer (Updated each May)</li>
-										</ol>
-										<p>Education is the process of facilitating learning. Knowledge kills, values, beliefs, and habits of a group of people are transferred  Friendly Schools is a multi-component, evidence-based, whole-school initiative involving the whole-school community Friendly Schools is a multi-component, 
-											<br><br>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It is a long established fact that a reader will be distracted by the readable content of a page English.</p>
-									</div> <!-- /.post-middle-list -->
+									<h1 style="font-size: 30px"><?=$model->translate->title?></h1><br>
+									<?=$model->translate->text?>
 								<!-- <div class="main-post-content"> -->
 									<!-- <div class="share-option clear-fix"> -->
 		        						<!-- <h6 class="float-left">Share</h6> -->
@@ -196,46 +183,22 @@
 
 		        					<div class="sidebar-box feature-event">
 		        						<div class="box-wrapper">
-		        							<h4>Featured events</h4>
+		        							<h4><?=Lang::t('Latest news')?></h4>
+		        							<?php foreach ($news as $key => $item) : ?>
+		        							<div class="single-event clear-fix">
+		        								<div class="date float-left p-color-bg">
+		        									<?=date("j",$item->created_date)?> <span><?=date("M",$item->created_date)?></span>
+		        								</div> <!-- /.date -->
+		        								<div class="post float-left">
+		        									<a href="<?=Url::to('/?slug='.$item->template->slug.'&item_slug='.$item->slug)?>" class="tran3s"><?=$item->translate->title?></a>
+		        									<ul>
+		        										<li><i class="fa fa-eye" aria-hidden="true"></i> <?=$item->views?></li>
+		        										<!-- <li><i class="fa fa-tag" aria-hidden="true"></i>Golf Club</li> -->
+		        									</ul>
+		        								</div> <!-- /.post -->
+		        							</div> <!-- /.single-event -->
+		        							<?php endforeach; ?>
 		        							
-		        							<div class="single-event clear-fix">
-		        								<div class="date float-left p-color-bg">
-		        									27 <span>Feb</span>
-		        								</div> <!-- /.date -->
-		        								<div class="post float-left">
-		        									<a href="event-details.html" class="tran3s">The multi-group recital included jolly</a>
-		        									<ul>
-		        										<li><i class="fa fa-clock-o" aria-hidden="true"></i> 10pm-04pm</li>
-		        										<li><i class="fa fa-tag" aria-hidden="true"></i>Golf Club</li>
-		        									</ul>
-		        								</div> <!-- /.post -->
-		        							</div> <!-- /.single-event -->
-
-		        							<div class="single-event clear-fix">
-		        								<div class="date float-left p-color-bg">
-		        									21 <span>Feb</span>
-		        								</div> <!-- /.date -->
-		        								<div class="post float-left">
-		        									<a href="event-details.html" class="tran3s">The multi-group recital included jolly</a>
-		        									<ul>
-		        										<li><i class="fa fa-clock-o" aria-hidden="true"></i> 10pm-04pm</li>
-		        										<li><i class="fa fa-tag" aria-hidden="true"></i>Golf Club</li>
-		        									</ul>
-		        								</div> <!-- /.post -->
-		        							</div> <!-- /.single-event -->
-
-		        							<div class="single-event clear-fix">
-		        								<div class="date float-left p-color-bg">
-		        									17 <span>Feb</span>
-		        								</div> <!-- /.date -->
-		        								<div class="post float-left">
-		        									<a href="event-details.html" class="tran3s">The multi-group recital included jolly</a>
-		        									<ul>
-		        										<li><i class="fa fa-clock-o" aria-hidden="true"></i> 10pm-04pm</li>
-		        										<li><i class="fa fa-tag" aria-hidden="true"></i>Golf Club</li>
-		        									</ul>
-		        								</div> <!-- /.post -->
-		        							</div> <!-- /.single-event -->
 		        						</div> <!-- /.box-wrapper -->
 		        					</div> <!-- /.sidebar-box.feature-event -->
 		        				</div> <!-- /.wrapper -->

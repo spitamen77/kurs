@@ -7,7 +7,7 @@ use yii\helpers\Url;
 use app\models\Lang;
 // use app\models\dilshod\Menu;
 
-// $menu = Menu::menus();
+// var_dump($_GET['slug']); exit('asdasd');
 ?>
 
 <!-- Header _________________________________ -->
@@ -45,7 +45,7 @@ use app\models\Lang;
     <div class="container">
         <div class="main-menu-wrapper clear-fix">
             <div class="container">
-                <div class="logo float-left"><a href="index.html" style="vertical-align:middle;"><img src="/themes/edutech/images/logo3.png" alt="LOGO"></a></div>
+                <div class="logo float-left"><a href="<?=Url::to('/')?>" style="vertical-align:middle;"><img src="/themes/edutech/images/logo3.png" alt="<?=Lang::t('Training center Outcome Tree')?>"></a></div>
 
                 <form action="#" class="float-right">
                     <input type="text" placeholder="<?=Lang::t('Search')?>">
@@ -66,7 +66,7 @@ use app\models\Lang;
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="dropdown-holder current-page-item"><a href="<?=Url::to('/')?>"><?=Lang::t('bosh sahifa')?></a>
+                            <li class="dropdown-holder <?=($_GET['slug'])?'':'current-page-item'?>"><a href="<?=Url::to('/')?>"><?=Lang::t('bosh sahifa')?></a>
                 
                             </li>
                             <?php PrintMenu(Menu::menus()); ?>
@@ -80,7 +80,7 @@ use app\models\Lang;
 </header>
 <?php function PrintMenu($menu){ ?>
     <? foreach ($menu as $value) { ?>
-        <li class="dropdown-holder"><a href="<?=Url::to(['site/index', 'slug' => $value['slug']])?>"><?=$value['title']?></a>
+        <li class="dropdown-holder <?=($_GET['slug']==$value['slug'])?'current-page-item':''?>"><a href="<?=Url::to(['site/index', 'slug' => $value['slug']])?>"><?=$value['title']?></a>
             <?// if ($value['children']) { ?>
                 <!-- <ul class="sub-menu"> -->
                     <? //PrintMenu($value['children']); ?>

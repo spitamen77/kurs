@@ -7,8 +7,10 @@ use app\widgets\Alert;
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+use app\models\Lang;
 
 AppAsset::register($this);
+// echo "<pre>"; var_dump($content);exit();
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -37,11 +39,23 @@ AppAsset::register($this);
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/themes/edutech/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <!-- Og:type -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="<?=Lang::t('Training center Outcome Tree')?>">
+    <meta property="og:title" content="<?= Html::encode($this->title) ?>">
+    <meta property="og:description" content="=====">
+    <meta property="og:url" content="http://www.outcometree.uz<?=Yii::$app->request->url?>">
+    <meta property="og:locale" content="<?= Yii::$app->language ?>">
+    <meta property="og:image" content="-====">
+    <meta property="og:image:width" content="968">
+    <meta property="og:image:height" content="504">
     <!-- Page Description and Author -->
     <meta name="description" content="Margo - Responsive HTML5 Template">
-    <meta name="author" content="@coloterra">
+    <meta name="author" content="http://www.websar.uz">
     
-
+<?php 
+    // echo "<pre>"; var_dump($this);exit;
+?>
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
