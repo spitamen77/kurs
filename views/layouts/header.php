@@ -69,10 +69,10 @@ else $action = Yii::$app->controller->action->id;
                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li class="dropdown-holder <?=($action=='index')?'current-page-item':''?>"><a href="<?=Url::to('/')?>"><?=Lang::t('bosh sahifa')?></a>
-                
+                            <li class="dropdown-holder <?=($action=='about')?'current-page-item':''?>"><a href="<?=Url::to('/site/about')?>"><?=Lang::t('About')?></a>
                             </li>
                             <?php PrintMenu(Menu::menus()); ?>
-                          
+                            <li class="dropdown-holder <?=($action=='contact')?'current-page-item':''?>"><a href="<?=Url::to('/site/contact')?>"><?=Lang::t('Contact us')?></a>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav>
