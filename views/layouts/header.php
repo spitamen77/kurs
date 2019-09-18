@@ -6,8 +6,10 @@ use app\models\maxpirali\Menu;
 use yii\helpers\Url;
 use app\models\Lang;
 // use app\models\dilshod\Menu;
-
-// var_dump($_GET['slug']); exit('asdasd');
+if (isset($_GET['slug'])) {
+    $action= '';
+}
+else $action = Yii::$app->controller->action->id;
 ?>
 
 <!-- Header _________________________________ -->
@@ -66,7 +68,7 @@ use app\models\Lang;
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="dropdown-holder <?=($_GET['slug'])?'':'current-page-item'?>"><a href="<?=Url::to('/')?>"><?=Lang::t('bosh sahifa')?></a>
+                            <li class="dropdown-holder <?=($action=='index')?'current-page-item':''?>"><a href="<?=Url::to('/')?>"><?=Lang::t('bosh sahifa')?></a>
                 
                             </li>
                             <?php PrintMenu(Menu::menus()); ?>

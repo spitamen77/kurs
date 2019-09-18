@@ -46,7 +46,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 else return Lang::t('Rasm yuklanmagan');
              },
             ],
-            'info',
+            'info_uz',
+            'info_ru',
+            'info_en',
             [
                 'class' => 'yii\grid\ActionColumn',
                 'header'=>Lang::t('Amallar'),

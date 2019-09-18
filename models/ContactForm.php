@@ -3,19 +3,23 @@
 namespace app\models;
 
 use Yii;
-use yii\base\Model;
-
+// use yii\base\Model;
+use app\models\Lang;
 /**
  * ContactForm is the model behind the contact form.
  */
-class ContactForm extends Model
+class ContactForm extends \yii\db\ActiveRecord
 {
-    public $name;
-    public $email;
-    public $subject;
-    public $body;
+    // public $name;
+    // public $email;
+    // public $subject;
+    // public $body;
     public $verifyCode;
 
+    public static function tableName()
+    {
+        return 'in_contact';
+    }
 
     /**
      * @return array the validation rules.
@@ -38,7 +42,7 @@ class ContactForm extends Model
     public function attributeLabels()
     {
         return [
-            'verifyCode' => 'Verification Code',
+            'verifyCode' => Lang::t('Verification Code'),
         ];
     }
 
@@ -47,15 +51,16 @@ class ContactForm extends Model
      * @param string $email the target email address
      * @return bool whether the model passes validation
      */
-    public function contact($email)
+    public function contact() //$email
     {
         if ($this->validate()) {
-            Yii::$app->mailer->compose()
-                ->setTo($email)
-                ->setFrom([$this->email => $this->name])
-                ->setSubject($this->subject)
-                ->setTextBody($this->body)
-                ->send();
+
+            // Yii::$app->mailer->compose()
+            //     ->setTo($email)
+            //     ->setFrom([$this->email => $this->name])
+            //     ->setSubject($this->subject)
+            //     ->setTextBody($this->body)
+            //     ->send();
 
             return true;
         }

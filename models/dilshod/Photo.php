@@ -34,8 +34,8 @@ class Photo extends \yii\db\ActiveRecord
         return [
             // [['slug'], 'required'],
             [['status'], 'integer'],
-            [['slug','info'], 'string', 'max' => 255],
-            [['image'],'file','maxFiles' => 10]
+            [['slug','info_uz','info_en','info_ru'], 'string', 'max' => 255],
+            // [['image'],'file','maxFiles' => 10]
         ];
     }
 
@@ -55,8 +55,10 @@ class Photo extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'slug' => Lang::t('Slug'),
-            'image' => Lang::t("Image"),
-            'info' => Lang::t("Description"),
+            // 'image' => Lang::t("Image"),
+            'info_uz' => "Узбекча",
+            'info_en' => "English",
+            'info_ru' => "Русский",
             'status' => 'Status',
         ];
     }
@@ -68,6 +70,25 @@ class Photo extends \yii\db\ActiveRecord
         '0' => Lang::t('Nofaol'),
     ];
     }
+
+    public function getInfo()
+    {
+        switch (Yii::$app->language) {
+            case 'uz-UZ':
+                return $this->info_uz;
+                break;
+            case 'ru-RU':
+                return $this->info_ru;
+                break;
+            case 'en-US':
+                return $this->info_en;
+                break;    
+            default:
+                return $this->info_uz;
+                break;
+        }
+    }
+
     public static function getPhoto(){
         return self::find()->where(['status'=>self::STATUS_ACTIVE])->one();
     }

@@ -18,7 +18,7 @@ class PhotoSearch extends Photo
     {
         return [
             [['id', 'status'], 'integer'],
-            [['slug','info', 'image'], 'safe'],
+            [['slug','info_ru', 'info_en','info_uz'], 'safe'],
         ];
     }
 
@@ -67,8 +67,7 @@ class PhotoSearch extends Photo
             'status' => $this->status,
         ]);
 
-        $query->andFilterWhere(['like', 'slug', $this->slug])
-            ->andFilterWhere(['like', 'info', $this->info]);
+        $query->andFilterWhere(['like', 'slug', $this->slug]);
 
         return $dataProvider;
     }

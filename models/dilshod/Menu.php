@@ -103,7 +103,7 @@ class Menu extends \yii\db\ActiveRecord
     public function getMenu()
     {   
         $list = ['0'=>Lang::t('Main menu')];
-        $menu = self::find()->where(['child'=>0])->all();
+        $menu = self::find()->where(['child'=>0, 'status'=>self::STATUS_ACTIVE])->all();
         foreach ($menu as $key => $value) {
             $list["$value->id"] = $value->title;
             # code...
@@ -135,6 +135,6 @@ class Menu extends \yii\db\ActiveRecord
 
     public function getMenuTrans($id)
     {
-        return MenuTrans::find()->where(['menu_id'=>$id, 'status'=>1])->all();
+        return MenuTrans::find()->where(['menu_id'=>$id, 'status'=>self::STATUS_ACTIVE])->all();
     }
 }

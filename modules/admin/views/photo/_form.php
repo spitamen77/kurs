@@ -28,7 +28,9 @@ use app\models\Lang;
     <?= $form->field($model, 'slug')->textInput(['maxlength' => true]); ?>
 <?php endif;?>
    
-    <?= $form->field($model, 'info')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'info_uz')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'info_ru')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'info_en')->textInput(['maxlength' => true]) ?>
 
 <?php if (!$model->isNewRecord) : ?>
     <?= $form->field($model, 'status')->dropDownList($model->getStatus()); ?>

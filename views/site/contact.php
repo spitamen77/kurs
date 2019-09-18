@@ -7,62 +7,98 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
+use app\models\Lang;
 
-$this->title = 'Contact';
+$this->title = Lang::t('Contact us');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-contact">
-    <h1><?= Html::encode($this->title) ?></h1>
 
-    <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
+            <!-- Page Breadcrum __________________________ -->
+            <div class="page-breadcrum">
+                <div class="container">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>-</li>
+                        <li><?=$this->title?></li>
+                    </ul>
+                </div> <!-- /.container -->
+            </div> <!-- /.page-breadcrum -->
 
-        <div class="alert alert-success">
-            Thank you for contacting us. We will respond to you as soon as possible.
-        </div>
 
-        <p>
-            Note that if you turn on the Yii debugger, you should be able
-            to view the mail message on the mail panel of the debugger.
-            <?php if (Yii::$app->mailer->useFileTransport): ?>
-                Because the application is in development mode, the email is not sent but saved as
-                a file under <code><?= Yii::getAlias(Yii::$app->mailer->fileTransportPath) ?></code>.
-                Please configure the <code>useFileTransport</code> property of the <code>mail</code>
-                application component to be false to enable email sending.
-            <?php endif; ?>
-        </p>
+            <!-- Contact Us Form _____________________ -->
+            <div class="contact-us-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 wow fadeInLeft">
+                            <div class="contact-us-form">
+                                <h1 style="font-size: 30px"><?= Html::encode($this->title) ?></h1>
 
-    <?php else: ?>
+                                <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 
-        <p>
-            If you have business inquiries or other questions, please fill out the following form to contact us.
-            Thank you.
-        </p>
+                                    <div class="alert alert-success">
+                                        <?=Lang::t('Thank you for contacting us. We will respond to you as soon as possible')?>.
+                                    </div>
 
-        <div class="row">
-            <div class="col-lg-5">
+                                    <p>
+                                        
+                                    </p>
 
-                <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
+                                <?php else: ?>
+                                <!-- <h3>Send A Message</h3> -->
+                                <p>Your email address will not be published.</p>
+                                <?php $form = ActiveForm::begin(['class'=>'form-validation']); ?>
+                                <!-- <form action="inc/sendemail.php" class="form-validation" autocomplete="off"> -->
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                            <?= $form->field($model, 'name')->textInput(['autofocus' => true])->input('text', ['placeholder' => Lang::t("Name")])->label(false) ?>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                            <?= $form->field($model, 'email')->input('email', ['placeholder' => "Email"])->label(false) ?>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <?= $form->field($model, 'subject')->input('text', ['placeholder' => Lang::t("Subject")])->label(false) ?>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <?= $form->field($model, 'body')->textarea(['rows' => 6])->label(false) ?>
+                        
+                                        <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
+                                            'template' => '<div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div>',
+                                        ])->label(false) ?>
+                                            <button class="tran3s p-color-bg themehover" title="Send"><?=Lang::t('Send')?></button>
+                                        </div>
+                                    </div>
+                                <?php ActiveForm::end(); ?>
+                                <?php endif;?>
+                               
+                            </div> <!-- /.contact-us-form -->
+                        </div> <!-- /.col- -->
 
-                    <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 wow fadeInRight">
+                            <div class="contactUs-address">
+                                <h3><?=$this->title?></h3>
+                                <p>Welcome to our website , Feel free to contact us any time </p>
 
-                    <?= $form->field($model, 'email') ?>
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        <a href="mailto:outcometree101@gmail.com" class="tran3s">outcometree101@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                        <a href="tel:+998942996949" class="tran3s">+998942996949</a>
+                                    </li>
+                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Edine rode,1234 Plot/RS ,CA <br>Near army club, #2 Road,NY</li>
+                                </ul>
 
-                    <?= $form->field($model, 'subject') ?>
+                            </div> <!-- /.our-address -->
+                        </div>
+                    </div> <!-- /.row -->
+                </div> <!-- /.container -->
+            </div> <!-- /.contact-us-page -->
 
-                    <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
 
-                    <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
-                        'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
-                    ]) ?>
-
-                    <div class="form-group">
-                        <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
-                    </div>
-
-                <?php ActiveForm::end(); ?>
+            <!-- Google Map -->
+            <div id="google-map" style="height:460px; width:100%; margin-top:100px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2119.4170772478055!2d69.23463636761767!3d41.30215463895806!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sus!4v1568797357431!5m2!1sru!2su" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 
             </div>
-        </div>
-
-    <?php endif; ?>
-</div>
