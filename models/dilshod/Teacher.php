@@ -3,7 +3,7 @@
 namespace app\models\dilshod;
 
 use Yii;
-
+use app\models\Lang;
 /**
  * This is the model class for table "in_teacher".
  *
@@ -31,7 +31,7 @@ class Teacher extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'fan', 'biography', 'photo'], 'required'],
+            [['name', 'fan', 'biography'], 'required'],
             [['name', 'fan', 'photo', 'email'], 'string', 'max' => 128],
             [['biography'], 'string', 'max' => 4096],
             [['phone'], 'string', 'max' => 20],
@@ -45,11 +45,11 @@ class Teacher extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
+            'name' => Lang::t('Name'),
             'fan' => 'Fan',
-            'biography' => 'Biography',
-            'photo' => 'Photo',
-            'phone' => 'Phone',
+            'biography' => Lang::t('Biography'),
+            'photo' => Lang::t('Photo'),
+            'phone' => Lang::t('Phone'),
             'email' => 'Email',
         ];
     }

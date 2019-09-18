@@ -1,11 +1,11 @@
 <?php
 
 use yii\helpers\Html;
-
+use app\models\Lang;
 /* @var $this yii\web\View */
 /* @var $model app\models\ContactForm */
 
-$this->title = 'Update Contact Form: ' . $model->name;
+$this->title = Lang::t('Update').': ' . $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Contact Forms', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';

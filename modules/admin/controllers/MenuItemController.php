@@ -210,6 +210,7 @@ class MenuItemController extends Controller
         $model = $this->findModel($id);
         $model->status=MenuItem::STATUS_DELETE;
         $model->slug = uniqid();
+        @unlink($model->photo); 
         $model->save();
         $menu = MenuItemTrans::find()->where(['item_id'=>$id])->all();
         if (!empty($menu)) {

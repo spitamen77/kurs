@@ -2,12 +2,13 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use app\models\Lang;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\dilshod\ContactSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Contact Forms';
+$this->title = Lang::t('Contact us');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="contact-form-index">
@@ -16,7 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Contact Form', ['create'], ['class' => 'btn btn-success']) ?>
+        <?//= Html::a('Create Contact Form', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -25,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            // 'id',
             'name',
             'email:email',
             'subject',

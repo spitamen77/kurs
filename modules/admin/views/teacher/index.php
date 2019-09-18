@@ -2,12 +2,12 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-
+use app\models\Lang;
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\dilshod\TeacherSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Teachers';
+$this->title = Lang::t('Teacher');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="teacher-index">
@@ -25,13 +25,22 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            // 'id',
             'name',
             'fan',
-            'biography',
-            'photo',
-            //'phone',
-            //'email:email',
+            'phone',
+            'email:email',
+            // 'biography',
+            // 'photo',
+            [
+             'attribute' =>  Lang::t("Rasm"),
+             'format' => 'raw',
+             'value' => function ($model) {   
+                if (!empty($model->photo))
+                  return '<img src="/web/'.$model->photo.'" width="120px" height="auto">'; 
+                else return Lang::t('Rasm yuklanmagan');
+             },
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

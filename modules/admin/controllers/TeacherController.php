@@ -8,6 +8,7 @@ use app\models\dilshod\TeacherSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * TeacherController implements the CRUD actions for Teacher model.
@@ -66,8 +67,25 @@ class TeacherController extends Controller
     {
         $model = new Teacher();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            function rasm($model,$qiymat){
+                $file = UploadedFile::getInstance($model, $qiymat);
+                if (isset($file))
+                {
+                    $filename = uniqid() . '.' . $file->extension;
+                    $path = 'uploads/teacher';
+                    if (!file_exists($path)) {
+                        mkdir($path,0777,true);
+                    }
+                    $path = 'uploads/teacher/' . $filename;
+                    if ($file->saveAs($path))
+                        {
+                            return $path;
+                        }
+                }
+            }
+            $model->photo = rasm($model, 'photo');
+            if ($model->save()) return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('create', [
@@ -85,9 +103,33 @@ class TeacherController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $model2 = clone $model;
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            function qayta($model,$rasm, $model2){
+                $file = UploadedFile::getInstance($model, $rasm);
+                if ($model2->photo==null || $file!=null) {
+                    if (isset($file))
+                    {
+                        $filename = uniqid() . '.' . $file->extension;
+                        $path = 'uploads/teacher/' . $filename;
+                        $path2 = 'uploads/teacher/' . $model2->photo;
+                        
+                        if (is_file($path2)) {
+                // print_r($path2); die;
+                            @unlink($path2);
+                        }
+                        if ($file->saveAs($path))
+                        {
+                            return $path;
+                        }
+                    }
+                    else return $model2->photo;
+                }
+                else return $model2->photo;
+            }
+            $model->photo = qayta($model, 'photo', $model2);
+            if ($model->save()) return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('update', [
@@ -104,7 +146,9 @@ class TeacherController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        $model = $this->findModel($id);
+        @unlink($model->photo); 
+        $model->delete();
 
         return $this->redirect(['index']);
     }

@@ -40,8 +40,8 @@
                     ['label' => 'Maqolalar', 'icon' => 'file-code-o', 'url' => ['/admin/menu-item/index']],
                     ['label' => 'Tarjimalar', 'icon' => 'file-code-o', 'url' => ['/admin/text-translate/index']],
                     ['label' => 'Rasm', 'icon' => 'file-code-o', 'url' => ['/admin/photo/index']],
-                    ['label' => 'Shopcart', 'icon' => 'dashboard', 'url' => ['/admin/shopcart/index']],
-                    ['label' => 'User', 'icon' => 'dashboard', 'url' => ['/admin/user/index']],
+                    ['label' => 'Teacher', 'icon' => 'dashboard', 'url' => ['/admin/teacher/index']],
+                    ['label' => 'Contact', 'icon' => 'dashboard', 'url' => ['/admin/contact/index']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     // [
                     //     'label' => 'Some tools',
