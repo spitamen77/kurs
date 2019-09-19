@@ -18,6 +18,7 @@ use app\models\maxpirali\Menu;
 use app\models\maxpirali\MenuItem;
 use app\models\maxpirali\MenuItemTrans;
 use app\models\dilshod\MenuItemTransSearch as Trans;
+use app\models\dilshod\Teacher;
 
 class SiteController extends Controller
 {
@@ -205,12 +206,19 @@ class SiteController extends Controller
         ->andWhere(['status'=>MenuItem::STATUS_ACTIVE])
         ->andWhere(['not',['id'=>$item->id]])->orderBy(['id'=>SORT_DESC])
         ->limit(3)->all();
-        return $this->render('/'.$menu->template().'/page',['model'=>$item,'menu'=>$menu,'news'=>$news]);
+
+        $data= Teacher::find()->orderBy(['rand()' => SORT_DESC])->limit(3)->all();
+
+        return $this->render('/'.$menu->template().'/page',[
+            'model'=>$item,
+            'menu'=>$menu,
+            'news'=>$news,
+            'teacher'=> $data
+        ]);
     }
     public function renderPages($slug)
     {
         $menu = Menu::find()->where(['slug'=>$slug])->one();
-        // sardor
         $query = MenuItem::find()->where(['menu_id'=>$menu->id])->andWhere(['status'=>[MenuItem::STATUS_ACTIVE,MenuItem::STATUS_INACTIVE]]);
         $countQuery = clone $query;
         $pages = new Pagination(['totalCount' => $countQuery->count(),'pageSize' => 12 ]);
@@ -218,11 +226,20 @@ class SiteController extends Controller
             ->orderBy(['id'=>SORT_DESC])
             ->limit($pages->limit)
             ->all();
+
+        $news = MenuItem::find()->where(['menu_id'=>8])
+        ->andWhere(['status'=>MenuItem::STATUS_ACTIVE])
+        ->andWhere(['not',['id'=>$item->id]])->orderBy(['id'=>SORT_DESC])
+        ->limit(3)->all();
+
+        $data= Teacher::find()->orderBy(['rand()' => SORT_DESC])->limit(3)->all();
         // echo "<pre>";var_dump($models); die;
         return $this->render('/'.$menu->template().'/pages',[
             'model' => $models, 
             'pages' => $pages, 
-            'menu' => $menu
+            'menu' => $menu,
+            'news'=>$news,
+            'teacher'=> $data
         ]);
     }
 

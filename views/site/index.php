@@ -24,24 +24,25 @@ $images = Photo::getPhoto();
 
                     <!-- LAYER NR. 1 -->
                     <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['0','25','35','15']" data-y="['middle','middle','middle','middle']" data-voffset="['-56','-56','-45','-150']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
-                        <h5><?=$photo->photo->info?> </h5>
+                        <!-- <h5><?=$photo->photo->info?> </h5> -->
                     </div>
 
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['0','25','35','15']" data-y="['middle','middle','middle','middle']" data-voffset="['20','25','30','-85']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
-                        <h1>Education is a <span class="p-color">backbone</span> <br>of life</h1>
+                        <h1><?=$photo->photo->info?>  </h1>
+                        <!-- <span class="p-color"><?=$photo->photo->info?></span> -->
                     </div>
 
 
                     <!-- LAYER NR. 3 -->
-                    <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['0','25','35','15']" data-y="['middle','middle','middle','middle']" data-voffset="['205','205','210','80']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                    <!-- <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['0','25','35','15']" data-y="['middle','middle','middle','middle']" data-voffset="['205','205','210','80']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
                         <a href="course-v1.html" class="course-button">View courses</a>
-                    </div>
+                    </div> -->
                     
                     <!-- LAYER NR. 4 -->
-                    <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['192','217','227','15']" data-y="['middle','middle','middle','middle']" data-voffset="['205','205','210','155']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                    <!-- <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['192','217','227','15']" data-y="['middle','middle','middle','middle']" data-voffset="['205','205','210','155']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
                         <a href="contact-us.html" class="buy-button p-color-bg">BUY NOW</a>
-                    </div>
+                    </div> -->
                 
                 </li>
             <?php endforeach;?>
@@ -485,7 +486,7 @@ $images = Photo::getPhoto();
 <div class="test-faq">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 testimonial wow fadeInLeft">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 testimonial wow fadeInLeft">
                 <div class="wrapper">
                     <h3>TESTIMONIALS</h3>
                     <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
@@ -544,84 +545,7 @@ $images = Photo::getPhoto();
                 </div> <!-- /.wrapper -->
             </div> <!-- /.testimonial -->
 
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 faq wow fadeInRight">
-                <div class="wrapper">
-                    <h3>Frequently Asked Questions</h3>
-                    <!-- ________________ Panel _______________ -->
-                    <div class="faq_panel">
-                        <div class="panel-group theme-accordion" id="accordion">
-                            <div class="panel">
-                                <div class="panel-heading active-panel">
-                                    <h6 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                                            Smart Learning is an education platform partners</a>
-                                    </h6>
-                                </div>
-                                <div id="collapse1" class="panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempo- ra incidunt ut labore et dolore magnam aliquam quaerat voluptatem Nemo enim ipsam voluptatem</p>
-                                    </div>
-                                </div>
-                            </div> <!-- /panel 1 -->
-                            <div class="panel">
-                                <div class="panel-heading">
-                                    <h6 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                                            Education of Tomorrow, Rooted in Tradition</a>
-                                    </h6>
-                                </div>
-                                <div id="collapse2" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem Nemo enim ipsam voluptatem</p>
-                                    </div>
-                                </div>
-                            </div> <!-- /panel 2 -->
-                            <div class="panel">
-                                <div class="panel-heading">
-                                    <h6 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing</a>
-                                    </h6>
-                                </div>
-                                <div id="collapse3" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem Nemo enim ipsam voluptatem</p>
-                                    </div>
-                                </div>
-                            </div> <!-- /panel 3 -->
-
-                            <div class="panel">
-                                <div class="panel-heading">
-                                    <h6 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                                            Build Education Website Using HTML</a>
-                                    </h6>
-                                </div>
-                                <div id="collapse4" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem Nemo enim ipsam voluptatem</p>
-                                    </div>
-                                </div>
-                            </div> <!-- /panel 4 -->
-
-                            <div class="panel">
-                                <div class="panel-heading">
-                                    <h6 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                                            BEST INDUSTRY LEADERS for awesome courses</a>
-                                    </h6>
-                                </div>
-                                <div id="collapse5" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem Nemo enim ipsam voluptatem</p>
-                                    </div>
-                                </div>
-                            </div> <!-- /panel 5 -->
-
-                        </div> <!-- end #accordion -->
-                    </div> <!-- End of .faq_panel -->
-                </div> <!-- /.wrapper -->
-            </div> <!-- /.faq -->
+            
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </div> <!-- /.test-faq -->

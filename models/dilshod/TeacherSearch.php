@@ -40,7 +40,7 @@ class TeacherSearch extends Teacher
      */
     public function search($params)
     {
-        $query = Teacher::find();
+        $query = Teacher::find()->orderBy(['id'=>SORT_DESC]);
 
         // add conditions that should always apply here
 

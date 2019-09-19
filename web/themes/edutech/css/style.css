@@ -2275,10 +2275,10 @@ text-transform: uppercase;
   margin-top: 40px;
 }
 .sidebarOne .talent-teacher .carousel-indicators {
-  top:52px;
-  bottom: auto;
+  /*top:52px;*/
+  /*bottom: auto;*/
   width:auto;
-  left:145px;
+  left:180px;
 }
 
 /*=================== Course V2 =================*/
