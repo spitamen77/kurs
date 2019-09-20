@@ -76,4 +76,9 @@ class MenuItemTransSearch extends MenuItemTrans
 
         return $dataProvider;
     }
+
+    public function getItem()
+    {
+        return $this->hasOne(MenuItem::className(), ['id' => 'item_id']);
+    }
 }

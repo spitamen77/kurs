@@ -49,8 +49,8 @@ else $action = Yii::$app->controller->action->id;
             <div class="container">
                 <div class="logo float-left"><a href="<?=Url::to('/')?>" style="vertical-align:middle;"><img src="/themes/edutech/images/logo3.png" alt="<?=Lang::t('Training center Outcome Tree')?>"></a></div>
 
-                <form action="#" class="float-right">
-                    <input type="text" placeholder="<?=Lang::t('Search')?>">
+                <form action="<?=Url::to('/site/search')?>" class="float-right">
+                    <input type="text" name="search" placeholder="<?=Lang::t('Search')?>">
                     <button><i class="fa fa-search-minus" aria-hidden="true"></i></button>
                 </form>
 
@@ -83,11 +83,11 @@ else $action = Yii::$app->controller->action->id;
 <?php function PrintMenu($menu){ ?>
     <? foreach ($menu as $value) { ?>
         <li class="dropdown-holder <?=($_GET['slug']==$value['slug'])?'current-page-item':''?>"><a href="<?=Url::to(['site/index', 'slug' => $value['slug']])?>"><?=$value['title']?></a>
-            <?// if ($value['children']) { ?>
-                <!-- <ul class="sub-menu"> -->
-                    <? //PrintMenu($value['children']); ?>
-                <!-- </ul> -->
-            <?//} ?>
+            <? if ($value['children']) { ?>
+                <ul class="sub-menu">
+                    <? PrintMenu($value['children']); ?>
+                </ul>
+            <?} ?>
         </li>
         <? } ?>  
    <? }?>

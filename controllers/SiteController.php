@@ -85,7 +85,6 @@ class SiteController extends Controller
      */
     public function actionIndex($slug = '', $item_slug = '')
     {
-        // var_dump($item_slug); die;
         if ($slug) {
             $menu = Menu::find()->where(['slug' => $slug])->one();
             $items = MenuItem::find()->where(['menu_id'=>$menu->id])->orderBy(['id'=>SORT_DESC])->all();
@@ -94,7 +93,7 @@ class SiteController extends Controller
             }
             switch (count($items)) {
                 case 0:
-                    return $this->render('error');
+                    return $this->renderMenu($menu);
                     break;
 
                 case 1:
@@ -244,16 +243,34 @@ class SiteController extends Controller
     }
 
 
-    public function actionConfirm()
+    public function renderMenu($menu)
     {
-        return $this->render('confirm');
+        if ($menu->child==0) {
+            $child = Menu::find()->where(['child'=>$menu->id])
+            ->orderBy(['tree'=>SORT_ASC])->all();
+
+            $news = MenuItem::find()->where(['menu_id'=>8])
+            ->andWhere(['status'=>MenuItem::STATUS_ACTIVE])
+            ->andWhere(['not',['id'=>$item->id]])->orderBy(['id'=>SORT_DESC])
+            ->limit(3)->all();
+
+            $data= Teacher::find()->orderBy(['rand()' => SORT_DESC])->limit(3)->all();
+                return $this->render('/'.$menu->template().'/menu',[
+                'menu'=>$menu,
+                'news'=>$news,
+                'teacher'=> $data,
+                'child'=>$child
+            ]);
+        }
+        else return $this->render('error');
     }
 
     public function actionSearch()
     {
+        // var_dump(Yii::$app->request->queryParams['search']);exit;
         $new = Trans::find()->where(['status'=>1])
-        ->andWhere(['like', 'title', Yii::$app->request->queryParams['search']])
-        ->andWhere(['like', 'short', Yii::$app->request->queryParams['search']])
+        ->orWhere(['like', 'title', Yii::$app->request->queryParams['search']])
+        ->orWhere(['like', 'short', Yii::$app->request->queryParams['search']])
         ->andWhere(['like', 'text', Yii::$app->request->queryParams['search']])
         ->orderBy(["id" => SORT_DESC])
         ->all();

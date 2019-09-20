@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use app\models\Lang;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\dilshod\Menu */
@@ -16,8 +17,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
+        <?= Html::a(Lang::t('Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a(Lang::t('Delete'), ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => 'Are you sure you want to delete this item?',
@@ -33,9 +34,21 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'id',
             'title',
             'slug',
-            'template_id',
+            // 'template_id',
+            [
+              'attribute' => 'template_id',
+               'value' => function ($model) {
+                   return  $model->getTemplate()[$model->template_id];
+               },
+            ], 
             'tree',
-            'child',
+            // 'child',
+            [
+              'attribute' => 'child',
+               'value' => function ($model) {
+                   return  $model->getOta($model->child);
+               },
+            ], 
             [
               'attribute' => 'status',
                'value' => function ($model) {

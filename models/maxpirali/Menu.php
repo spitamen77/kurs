@@ -61,7 +61,8 @@ class Menu extends \yii\db\ActiveRecord
         if ($id) {
             $menu = self::find()->where(['id' => $id, 'status' => 1])->one();
             $ota = ArrayHelper::toArray($menu);
-            $children = self::find()->where(['child'=>$menu->id, 'status' => 1])->all();
+            $children = self::find()->where(['child'=>$menu->id, 'status' => 1])
+            ->orderBy(['tree'=>SORT_ASC])->all();
             if ($children) {
                 foreach ($children as $key => $value) {
                     $ota['children'][] = self::menus($value->id);
@@ -71,7 +72,8 @@ class Menu extends \yii\db\ActiveRecord
             $menus = self::find()->where(['child' => 0, 'status' => 1])->all();
             foreach ($menus as $key => $value) {
                 $ota[$value->id] = ArrayHelper::toArray($value);
-                $children = self::find()->where(['child'=>$value->id, 'status' => 1])->all();
+                $children = self::find()->where(['child'=>$value->id, 'status' => 1])
+                ->orderBy(['tree'=>SORT_ASC])->all();
                 if ($children) {
                     foreach ($children as $key1 => $value1) {
                         $ota[$value->id]['children'][] = self::menus($value1->id);
