@@ -43,12 +43,14 @@ use dosamigos\tinymce\TinyMce;
     <?= $form->field($model, 'price')->textInput(['class' => 'your form-control']) ?>
 
     <?= $form->field($model, 'sale')->textInput(['class' => 'your form-control']) ?>
+    <?= $form->field($model, 'teacher_id')->dropDownList($model->getTeacher()); ?>
+
     </div>
     <?= $form->field($model, 'photo')->fileInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
-         <a href='javascript:history.back()' class='btn btn-danger'>ortga</a>
+         <a href='javascript:history.back()' class='btn btn-danger'><?=Lang::t('Back')?></a>
     </div>
 
     <?php ActiveForm::end(); ?>

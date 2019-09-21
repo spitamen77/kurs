@@ -47,9 +47,9 @@ class MenuItem extends \yii\db\ActiveRecord
         return [
             [['menu_id', 'title',  'slug', ], 'required'],
             ['slug', 'unique', 'message' => 'Slug mavjud'],
-            [['menu_id', 'views', 'status', 'price', 'sale', 'user_id', 'created_date', 'updated_date'], 'integer'],
+            [['menu_id', 'views', 'status', 'price', 'sale', 'user_id','teacher_id', 'created_date', 'updated_date'], 'integer'],
             [['text'], 'string'],
-            [['title', 'photo', 'slug'], 'string', 'max' => 128],
+            [['title', 'photo', 'slug','time'], 'string', 'max' => 128],
             [['short'], 'string', 'max' => 255],
         ];
     }
@@ -105,16 +105,17 @@ class MenuItem extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'menu_id' => 'Menu ID',
-            'title' => 'Title',
-            'photo' => 'Photo',
-            'short' => 'Short',
-            'text' => 'Text',
-            'slug' => 'Slug',
-            'views' => 'Views',
-            'status' => 'Status',
-            'price' => 'Price',
-            'sale' => 'Sale',
-            'pieces' => 'Pieces',
+            'title' => Lang::t('Title'),
+            'photo' => Lang::t('Photo'),
+            'short' => Lang::t('Short'),
+            'text' => Lang::t('Text'),
+            'slug' => Lang::t('Slug'),
+            'views' => Lang::t('Views'),
+            'status' => Lang::t('Status'),
+            'price' => Lang::t('Price'),
+            'sale' => Lang::t('Days'),
+            'teacher_id' => Lang::t('Teacher'),
+            'time' => Lang::t('Time'),
             'user_id' => 'User ID',
             'created_date' => 'Created Date',
             'updated_date' => 'Updated Date',
@@ -162,5 +163,15 @@ class MenuItem extends \yii\db\ActiveRecord
         $trans = $this->hasOne(MenuItemTrans::className(), ['item_id' => 'id'])->where(['lang'=>Yii::$app->language]);
         if (!empty($trans)) return $trans;
         return $this->hasOne(MenuItemTrans::className(), ['item_id' => 'id'])->where(['lang'=>"uz-UZ"]);
+    }
+
+    public function getTeacher()
+    {
+        $menu = Teacher::find()->orderBy(['id'=>SORT_DESC])->all();
+        $list = [];
+        foreach ($menu as $key => $value) {
+            $list["$value->id"] = $value->name." (".$value->fan.")";
+        }
+        return $list;
     }
 }
