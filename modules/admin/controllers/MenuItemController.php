@@ -55,8 +55,13 @@ class MenuItemController extends Controller
      */
     public function actionView($id)
     {
+        if (isset($_GET['lang'])){
+            $lang = MenuItemTrans::find()->where(['item_id'=>$id,'lang'=>$_GET['lang']])->one();
+        }
+        else $lang = MenuItemTrans::find()->where(['item_id'=>$id,'lang'=>'uz-UZ'])->one();
         return $this->render('view', [
             'model' => $this->findModel($id),
+            'lang'=>$lang
         ]);
 
         // return $this->render('/site/history', [
@@ -174,7 +179,7 @@ class MenuItemController extends Controller
 
             $model->save();
 
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['view', 'id' => $model->id,'lang'=>$lang->lang]);
         }
         return $this->render('update', [
             'model' => $model,'lang'=>$lang,

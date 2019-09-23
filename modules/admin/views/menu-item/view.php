@@ -8,7 +8,7 @@ use app\models\Lang;
 /* @var $model app\models\dilshod\MenuItem */
 
 $this->title = $model->title;
-$this->params['breadcrumbs'][] = ['label' => 'Menu Items', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Lang::t('Items'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
@@ -17,15 +17,15 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
+        <?= Html::a(Lang::t('Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a(Lang::t('Delete'), ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => 'Are you sure you want to delete this item?',
                 'method' => 'post',
             ],
         ]) ?>
-        <a href='javascript:history.back()' class='btn btn-danger'>ortga</a>
+        <a href='javascript:history.back()' class='btn btn-danger'><?=Lang::t("Back")?></a>
     </p>
 
     <?= DetailView::widget([
@@ -39,10 +39,20 @@ $this->params['breadcrumbs'][] = $this->title;
                    return  $model->getMenuTitle($model->menu_id);
                },
             ],
-            'title',
+//            'title',
+            [
+                'attribute' => 'title',
+                'value' => $lang->title
+            ],
             // 'photo',
-            'short',
-            'text:ntext',
+            [
+                'attribute' => 'short',
+                'value' => $lang->short
+            ],
+            [
+                'attribute' => 'text',
+                'value' => $lang->text
+            ],
             'slug',
             'views',
             // 'status',
@@ -56,11 +66,17 @@ $this->params['breadcrumbs'][] = $this->title;
             [
               'attribute' => 'price',
                'value' => function ($model) {
-                   return  $model->price;
+                   return number_format($model->price, 0, ',', ' ');
                },
             ],
             'sale',
-             // 'pieces',
+            [
+                'attribute' => 'teacher_id',
+                'value' => function ($model) {
+                    return  $model->getTeacher()[$model->teacher_id];
+                },
+            ],
+            'time',
             [
              'attribute' =>  Lang::t("Rasm"),
              'format' => 'raw',

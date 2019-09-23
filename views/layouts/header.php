@@ -83,9 +83,10 @@ else $action = Yii::$app->controller->action->id;
 <?php function PrintMenu($menu){ ?>
     <? foreach ($menu as $value) { ?>
         <li class="dropdown-holder <?=($_GET['slug']==$value['slug'])?'current-page-item':''?>"><a href="<?=Url::to(['site/index', 'slug' => $value['slug']])?>"><?=$value['title']?></a>
-            <? if ($value['children']) { ?>
+            <?  if ($value['children']) {   ?>
                 <ul class="sub-menu">
                     <? PrintMenu($value['children']); ?>
+                    <li><a href="<?=Url::to('site/teachers')?>"><?=Lang::t('Teacher')?></a>  </li>
                 </ul>
             <?} ?>
         </li>

@@ -44,6 +44,7 @@ use dosamigos\tinymce\TinyMce;
 
     <?= $form->field($model, 'sale')->textInput(['class' => 'your form-control']) ?>
     <?= $form->field($model, 'teacher_id')->dropDownList($model->getTeacher()); ?>
+    <?= $form->field($model, 'time')->textInput(['placeholder' => '12.09.2019']) ?>
 
     </div>
     <?= $form->field($model, 'photo')->fileInput() ?>

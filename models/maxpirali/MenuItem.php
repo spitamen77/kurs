@@ -2,6 +2,7 @@
 
 namespace app\models\maxpirali;
 
+use app\models\dilshod\Teacher;
 use Yii;
 use app\models\maxpirali\MenuItemTrans;
 
@@ -104,11 +105,25 @@ class MenuItem extends \yii\db\ActiveRecord
         return $this->hasOne(MenuItemTrans::className(), ['item_id' => 'id'])->where(['lang'=>"uz-UZ"]);
     }
 
-    public static function getXit($menu_id)
+    public static function getXit($menu_id,$limit=3)
     {
         return self::find()->where(['menu_id'=>$menu_id])
-        ->andWhere(['status'=>[self::STATUS_ACTIVE,self::STATUS_INACTIVE]])
+        ->andWhere(['status'=>[self::STATUS_ACTIVE]])
         ->orderBy(['views'=>SORT_DESC])
-        ->limit(3)->all();
+        ->limit($limit)->all();
+    }
+
+    public static function getXits($menu_id,$menu_id2,$limit)
+    {
+        return self::find()->where(['menu_id'=>$menu_id])
+            ->andWhere(['status'=>[self::STATUS_ACTIVE]])
+
+            ->orderBy(['views'=>SORT_DESC])
+            ->limit($limit)->all();
+    }
+
+    public function getTeacher()
+    {
+        return $this->hasOne(Teacher::className(), ['id' => 'teacher_id']);
     }
 }

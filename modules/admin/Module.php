@@ -21,9 +21,10 @@ class Module extends \yii\base\Module
     {
         // parent::init();
         if(Yii::$app->user->isGuest) {
-            return Yii::$app->getResponse()->redirect(Url::to(['/site/login']), 302);
+            if ($this->module->requestedRoute=="admin/site/login"){}
+            else return Yii::$app->getResponse()->redirect(Url::to(['/admin/site/login']), 302);
         }
-        if (Yii::$app->user->identity->username!="admin") {
+        elseif (Yii::$app->user->identity->username!="admin") {
            return Yii::$app->getResponse()->redirect(Url::to(['/']), 302);
         }
 

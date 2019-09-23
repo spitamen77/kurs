@@ -113,7 +113,7 @@ class MenuItem extends \yii\db\ActiveRecord
             'views' => Lang::t('Views'),
             'status' => Lang::t('Status'),
             'price' => Lang::t('Price'),
-            'sale' => Lang::t('Days'),
+            'sale' => Lang::t('Month'),
             'teacher_id' => Lang::t('Teacher'),
             'time' => Lang::t('Time'),
             'user_id' => 'User ID',

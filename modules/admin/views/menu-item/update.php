@@ -44,8 +44,9 @@ $this->params['breadcrumbs'][] = 'Update';
     </div> -->
     <div id="display" style="display: <?=($model->template->template_id==1)?"none":"block"?>;">
     <?= $form->field($model, 'price')->textInput(['class' => 'your form-control']) ?>
-
     <?= $form->field($model, 'sale')->textInput(['class' => 'your form-control']) ?>
+    <?= $form->field($model, 'teacher_id')->dropDownList($model->getTeacher()); ?>
+    <?= $form->field($model, 'time')->textInput(['placeholder' => '12.09.2019']) ?>
     </div>
     <?= $form->field($model, 'photo')->fileInput() ?>
     <?= $form->field($model, 'status')->dropDownList($model->getStatus());?>

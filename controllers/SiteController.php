@@ -109,7 +109,15 @@ class SiteController extends Controller
         $news = MenuItem::find()->where(['menu_id'=>8])
         ->andWhere(['status'=>MenuItem::STATUS_ACTIVE])
         ->orderBy(['id'=>SORT_DESC])->limit(6)->all();
-        return $this->render('index',['news'=>$news]);
+        $model = MenuItem::find()->where(['menu_id'=>10])
+            ->orWhere(['menu_id'=>11])
+            ->andWhere(['status'=>MenuItem::STATUS_ACTIVE])
+            ->orderBy(['id'=>SORT_DESC])->limit(9)->all();
+
+        return $this->render('index',[
+            'news'=>$news,
+            'model'=>$model
+        ]);
     }
 
     /**
@@ -174,11 +182,6 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
-     public function actionSucsess(){
-
-        return $this->render('sucsess');
-    }
-
     public function actionSignup()
     {
         $model = new SignupForm(); // Не забываем добавить в начало файла: use app\models\SignupForm; или заменить 'new SignupForm()' на '\app\models\SignupForm()'
@@ -206,13 +209,19 @@ class SiteController extends Controller
         ->andWhere(['not',['id'=>$item->id]])->orderBy(['id'=>SORT_DESC])
         ->limit(3)->all();
 
+        $kurs = MenuItem::find()->where(['menu_id'=>10])
+            ->orWhere(['menu_id'=>11])
+            ->andWhere(['status'=>MenuItem::STATUS_ACTIVE])
+            ->orderBy(['views'=>SORT_DESC])->limit(3)->all();
+
         $data= Teacher::find()->orderBy(['rand()' => SORT_DESC])->limit(3)->all();
 
         return $this->render('/'.$menu->template().'/page',[
             'model'=>$item,
             'menu'=>$menu,
             'news'=>$news,
-            'teacher'=> $data
+            'teacher'=> $data,
+            'kurs'=>$kurs
         ]);
     }
     public function renderPages($slug)
@@ -231,6 +240,11 @@ class SiteController extends Controller
         ->andWhere(['not',['id'=>$item->id]])->orderBy(['id'=>SORT_DESC])
         ->limit(3)->all();
 
+        $kurs = MenuItem::find()->where(['menu_id'=>10])
+            ->orWhere(['menu_id'=>11])
+            ->andWhere(['status'=>MenuItem::STATUS_ACTIVE])
+            ->orderBy(['views'=>SORT_DESC])->limit(3)->all();
+
         $data= Teacher::find()->orderBy(['rand()' => SORT_DESC])->limit(3)->all();
         // echo "<pre>";var_dump($models); die;
         return $this->render('/'.$menu->template().'/pages',[
@@ -238,7 +252,8 @@ class SiteController extends Controller
             'pages' => $pages, 
             'menu' => $menu,
             'news'=>$news,
-            'teacher'=> $data
+            'teacher'=> $data,
+            'kurs'=>$kurs
         ]);
     }
 
@@ -295,5 +310,13 @@ class SiteController extends Controller
         }else{
           return $this->goHome();
         }
+    }
+
+    public function actionTeachers()
+    {
+        $teacher = Teacher::find()->orderBy(['id'=>SORT_DESC])->all();
+        return $this->render('teachers', [
+            'model' => $teacher,
+        ]);
     }
 }

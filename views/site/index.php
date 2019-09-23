@@ -1,5 +1,6 @@
 <?php
 
+use app\models\maxpirali\MenuItem;
 use yii\helpers\Url;
 use app\models\Lang;
 /* @var $this yii\web\View */
@@ -116,213 +117,27 @@ $images = Photo::getPhoto();
 
         <div class="row">
             <div class="theme-slider course-item-wrapper">
+                <?php foreach ($model as $value):?>
                 <div class="item hvr-float-shadow">
-                    <div class="img-holder"><img src="images/home/2.jpg" alt="Image"></div>
+                    <div class="img-holder"><img src="<?=$value->photo?>" alt="<?=$value->translate->title?>"></div>
                     <div class="text">
-                        <h4><a href="course-details.html">web development courses</a></h4>
-                        <div class="img round-border"><img src="images/home/1.png" alt="Image"></div>
-                        <h6>Mahfuz riad</h6>
-                        <ul>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                        </ul>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat</p>
+                        <h4><a href="<?=Url::to('/?slug='.$value->template->slug.'&item_slug='.$value->slug)?>"><?=$value->translate->title?></a></h4>
+                        <div class="img round-border"><img src="<?=$value->teacher->photo?>" alt="<?=$value->teacher->name?>"></div>
+                        <h6><?=$value->teacher->name?></h6>
+
+                        <p><?=$value->translate->short?></p>
                         <div class="clear-fix">
                             <ul class="float-left">
-                                <li><i class="fa fa-users" aria-hidden="true"></i> 345</li>
-                                <li><i class="fa fa-comment" aria-hidden="true"></i> 5</li>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> Tea road,CA</li>
+                                <li><i class="fa fa-calendar" aria-hidden="true"></i> <?=$value->sale?> <?=Lang::t('Month')?>,</li>
+                                <!--                                        <li><i class="fa fa-comment" aria-hidden="true"></i> 5</li>-->
+                                <li><i class="fa fa-money" aria-hidden="true"></i> <?=Lang::t('Price')?> (сум)</li>
                             </ul>
 
-                            <a href="course-details.html" class="tran3s p-color-bg themehover">$50.00</a>
+                            <a href="<?=Url::to('/?slug='.$value->template->slug.'&item_slug='.$value->slug)?>" class="tran3s p-color-bg themehover"><?=number_format($value->price, 0, ',', ' ');?></a>
                         </div>
                     </div> <!-- /.text -->
                 </div> <!-- /.item -->
-
-                <div class="item hvr-float-shadow">
-                    <div class="img-holder"><img src="images/home/3.jpg" alt="Image"></div>
-                    <div class="text">
-                        <h4><a href="course-details.html">Learn Basic German Fast</a></h4>
-                        <div class="img round-border"><img src="images/home/1.png" alt="Image"></div>
-                        <h6>Mahfuz riad</h6>
-                        <ul>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                        </ul>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat</p>
-                        <div class="clear-fix">
-                            <ul class="float-left">
-                                <li><i class="fa fa-users" aria-hidden="true"></i> 345</li>
-                                <li><i class="fa fa-comment" aria-hidden="true"></i> 5</li>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> Tea road,CA</li>
-                            </ul>
-
-                            <a href="course-details.html" class="tran3s p-color-bg themehover">$50.00</a>
-                        </div>
-                    </div> <!-- /.text -->
-                </div> <!-- /.item -->
-
-                <div class="item hvr-float-shadow">
-                    <div class="img-holder"><img src="images/home/4.jpg" alt="Image"></div>
-                    <div class="text">
-                        <h4><a href="course-details.html">basic time use properly</a></h4>
-                        <div class="img round-border"><img src="images/home/1.png" alt="Image"></div>
-                        <h6>Mahfuz riad</h6>
-                        <ul>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                        </ul>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat</p>
-                        <div class="clear-fix">
-                            <ul class="float-left">
-                                <li><i class="fa fa-users" aria-hidden="true"></i> 345</li>
-                                <li><i class="fa fa-comment" aria-hidden="true"></i> 5</li>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> Tea road,CA</li>
-                            </ul>
-
-                            <a href="course-details.html" class="tran3s p-color-bg themehover">$50.00</a>
-                        </div>
-                    </div> <!-- /.text -->
-                </div> <!-- /.item -->
-
-                <div class="item hvr-float-shadow">
-                    <div class="img-holder"><img src="images/home/3.jpg" alt="Image"></div>
-                    <div class="text">
-                        <h4><a href="course-details.html">Learn Basic German Fast</a></h4>
-                        <div class="img round-border"><img src="images/home/1.png" alt="Image"></div>
-                        <h6>Mahfuz riad</h6>
-                        <ul>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                        </ul>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat</p>
-                        <div class="clear-fix">
-                            <ul class="float-left">
-                                <li><i class="fa fa-users" aria-hidden="true"></i> 345</li>
-                                <li><i class="fa fa-comment" aria-hidden="true"></i> 5</li>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> Tea road,CA</li>
-                            </ul>
-
-                            <a href="course-details.html" class="tran3s p-color-bg themehover">$50.00</a>
-                        </div>
-                    </div> <!-- /.text -->
-                </div> <!-- /.item -->
-
-                <div class="item hvr-float-shadow">
-                    <div class="img-holder"><img src="images/home/2.jpg" alt="Image"></div>
-                    <div class="text">
-                        <h4><a href="course-details.html">web development courses</a></h4>
-                        <div class="img round-border"><img src="images/home/1.png" alt="Image"></div>
-                        <h6>Mahfuz riad</h6>
-                        <ul>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                        </ul>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat</p>
-                        <div class="clear-fix">
-                            <ul class="float-left">
-                                <li><i class="fa fa-users" aria-hidden="true"></i> 345</li>
-                                <li><i class="fa fa-comment" aria-hidden="true"></i> 5</li>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> Tea road,CA</li>
-                            </ul>
-
-                            <a href="course-details.html" class="tran3s p-color-bg themehover">$50.00</a>
-                        </div>
-                    </div> <!-- /.text -->
-                </div> <!-- /.item -->
-
-                <div class="item hvr-float-shadow">
-                    <div class="img-holder"><img src="images/home/4.jpg" alt="Image"></div>
-                    <div class="text">
-                        <h4><a href="course-details.html">basic time use properly</a></h4>
-                        <div class="img round-border"><img src="images/home/1.png" alt="Image"></div>
-                        <h6>Mahfuz riad</h6>
-                        <ul>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                        </ul>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat</p>
-                        <div class="clear-fix">
-                            <ul class="float-left">
-                                <li><i class="fa fa-users" aria-hidden="true"></i> 345</li>
-                                <li><i class="fa fa-comment" aria-hidden="true"></i> 5</li>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> Tea road,CA</li>
-                            </ul>
-
-                            <a href="course-details.html" class="tran3s p-color-bg themehover">$50.00</a>
-                        </div>
-                    </div> <!-- /.text -->
-                </div> <!-- /.item -->
-
-                <div class="item hvr-float-shadow">
-                    <div class="img-holder"><img src="images/home/3.jpg" alt="Image"></div>
-                    <div class="text">
-                        <h4><a href="course-details.html">Learn Basic German Fast</a></h4>
-                        <div class="img round-border"><img src="images/home/1.png" alt="Image"></div>
-                        <h6>Mahfuz riad</h6>
-                        <ul>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                        </ul>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat</p>
-                        <div class="clear-fix">
-                            <ul class="float-left">
-                                <li><i class="fa fa-users" aria-hidden="true"></i> 345</li>
-                                <li><i class="fa fa-comment" aria-hidden="true"></i> 5</li>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> Tea road,CA</li>
-                            </ul>
-
-                            <a href="course-details.html" class="tran3s p-color-bg themehover">$50.00</a>
-                        </div>
-                    </div> <!-- /.text -->
-                </div> <!-- /.item -->
-
-                <div class="item hvr-float-shadow">
-                    <div class="img-holder"><img src="images/home/2.jpg" alt="Image"></div>
-                    <div class="text">
-                        <h4><a href="course-details.html">web development courses</a></h4>
-                        <div class="img round-border"><img src="images/home/1.png" alt="Image"></div>
-                        <h6>Mahfuz riad</h6>
-                        <ul>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                        </ul>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat</p>
-                        <div class="clear-fix">
-                            <ul class="float-left">
-                                <li><i class="fa fa-users" aria-hidden="true"></i> 345</li>
-                                <li><i class="fa fa-comment" aria-hidden="true"></i> 5</li>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> Tea road,CA</li>
-                            </ul>
-
-                            <a href="course-details.html" class="tran3s p-color-bg themehover">$50.00</a>
-                        </div>
-                    </div> <!-- /.text -->
-                </div> <!-- /.item -->
+                <?php endforeach;?>
             </div> <!-- /.course-slider -->
         </div>
     </div> <!-- /.container -->
@@ -374,77 +189,20 @@ $images = Photo::getPhoto();
         </div>
 
         <div class="row">
+            <?php foreach (MenuItem::getXit(12,6) as $item): ?>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp hvr-float-shadow">
                 <div class="single-event theme-bg-color">
-                    <div class="date p-color">25 <span>June</span></div>
-                    <a href="event-details.html"><h6>Build Education STRATEGY</h6></a>
-                    <p>Tech you how to build a complete Learning Management Offering a various of solutions meeting your need no matter</p>
+                    <div class="date p-color"><?=date("j",$item->created_date)?> <span><?=date("M",$item->created_date)?></span></div>
+                    <a href="<?=Url::to('/?slug='.$item->template->slug.'&item_slug='.$item->slug)?>"><h6><?=$item->translate->title?></h6></a>
+                    <p><?=$item->translate->short?></p>
                     <ul>
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Barisal,CA</li>
-                        <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
+                        <li><i class="fa fa-money" aria-hidden="true"></i> <?=number_format($item->price, 0, ',', ' ')?></li>
+                        <li><i class="fa fa-clock-o" aria-hidden="true"></i> <?=$item->time?></li>
                     </ul>
                 </div> <!-- /.single-event -->
             </div>
+            <?php endforeach;?>
 
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp hvr-float-shadow">
-                <div class="single-event theme-bg-color">
-                    <div class="date p-color">26 <span>June</span></div>
-                    <a href="event-details.html"><h6>Build Education STRATEGY</h6></a>
-                    <p>Tech you how to build a complete Learning Management Offering a various of solutions meeting your need no matter</p>
-                    <ul>
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Barisal,CA</li>
-                        <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
-                    </ul>
-                </div> <!-- /.single-event -->
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp hvr-float-shadow">
-                <div class="single-event theme-bg-color">
-                    <div class="date p-color">27 <span>June</span></div>
-                    <a href="event-details.html"><h6>Build Education STRATEGY</h6></a>
-                    <p>Tech you how to build a complete Learning Management Offering a various of solutions meeting your need no matter</p>
-                    <ul>
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Barisal,CA</li>
-                        <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
-                    </ul>
-                </div> <!-- /.single-event -->
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp hvr-float-shadow">
-                <div class="single-event theme-bg-color">
-                    <div class="date p-color">28 <span>June</span></div>
-                    <a href="event-details.html"><h6>Build Education STRATEGY</h6></a>
-                    <p>Tech you how to build a complete Learning Management Offering a various of solutions meeting your need no matter</p>
-                    <ul>
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Barisal,CA</li>
-                        <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
-                    </ul>
-                </div> <!-- /.single-event -->
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp hvr-float-shadow">
-                <div class="single-event theme-bg-color">
-                    <div class="date p-color">29 <span>June</span></div>
-                    <a href="event-details.html"><h6>Build Education STRATEGY</h6></a>
-                    <p>Tech you how to build a complete Learning Management Offering a various of solutions meeting your need no matter</p>
-                    <ul>
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Barisal,CA</li>
-                        <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
-                    </ul>
-                </div> <!-- /.single-event -->
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp hvr-float-shadow">
-                <div class="single-event theme-bg-color">
-                    <div class="date p-color">30 <span>June</span></div>
-                    <a href="event-details.html"><h6>Build Education STRATEGY</h6></a>
-                    <p>Tech you how to build a complete Learning Management Offering a various of solutions meeting your need no matter</p>
-                    <ul>
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Barisal,CA</li>
-                        <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
-                    </ul>
-                </div> <!-- /.single-event -->
-            </div>
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </div> <!-- /.event-section -->

@@ -9,7 +9,7 @@ use yii\helpers\Url;
 /* @var $searchModel app\models\dilshod\MenuItemSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Menu Items';
+$this->title = Lang::t('Items');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="menu-item-index">
@@ -33,9 +33,9 @@ $this->params['breadcrumbs'][] = $this->title;
             [
               'attribute' => 'menu_id',
               'filter' => false,
-              // 'format' => 'raw',
+               'format' => 'raw',
                'value' => function ($model) {
-                   return  $model->getMenuTitle($model->menu_id);
+                   return  "<a href='".Url::to("view?id=".$model->id)."'>".$model->getMenuTitle($model->menu_id)."</a>";
                },
             ],
             [

@@ -93,53 +93,25 @@ $this->title= $model->translate->title;
 	        						</div> <!-- /.box-wrapper -->
 	        					</div> <!-- /.sidebar-box.talent-teacher -->
 
-	        					<div class="sidebar-box feature-event feature-course-sidebar">
-	        						<div class="box-wrapper">
-	        							<h4>Featured courses</h4>
-	        							
-	        							<div class="single-event clear-fix">
-	        								<div class="date float-left p-color-bg">
-	        									25 <span>Feb</span>
-	        								</div> <!-- /.date -->
-	        								<div class="post float-left">
-	        									<a href="course-details.html" class="tran3s">Overviewing the leading contemporary conceptions</a>
-	        									<ul>
-	        										<li><i class="fa fa-calendar" aria-hidden="true"></i> 15 days</li>
-	        										<li><i class="fa fa-user" aria-hidden="true"></i>Asfia</li>
-	        										<li><a href="#">$124</a></li>
-	        									</ul>
-	        								</div> <!-- /.post -->
-	        							</div> <!-- /.single-event -->
-
-	        							<div class="single-event clear-fix">
-	        								<div class="date float-left p-color-bg">
-	        									11 <span>Feb</span>
-	        								</div> <!-- /.date -->
-	        								<div class="post float-left">
-	        									<a href="course-details.html" class="tran3s">Overviewing the leading contemporary conceptions</a>
-	        									<ul>
-	        										<li><i class="fa fa-calendar" aria-hidden="true"></i> 10 days</li>
-	        										<li><i class="fa fa-user" aria-hidden="true"></i>Riad</li>
-	        										<li><a href="#">Free</a></li>
-	        									</ul>
-	        								</div> <!-- /.post -->
-	        							</div> <!-- /.single-event -->
-
-	        							<div class="single-event clear-fix">
-	        								<div class="date float-left p-color-bg">
-	        									09 <span>Feb</span>
-	        								</div> <!-- /.date -->
-	        								<div class="post float-left">
-	        									<a href="course-details.html" class="tran3s">Overviewing the leading contemporary conceptions</a>
-	        									<ul>
-	        										<li><i class="fa fa-calendar" aria-hidden="true"></i> 1 Month</li>
-	        										<li><i class="fa fa-user" aria-hidden="true"></i>Asfia</li>
-	        										<li><a href="#">$124</a></li>
-	        									</ul>
-	        								</div> <!-- /.post -->
-	        							</div> <!-- /.single-event -->
-	        						</div> <!-- /.box-wrapper -->
-	        					</div> <!-- /.sidebar-box.feature-event.feature-course-sidebar -->
+                                <div class="sidebar-box feature-event feature-course-sidebar">
+                                    <div class="box-wrapper">
+                                        <h4>Featured courses</h4>
+                                        <?php foreach ($kurs as $zurs) :?>
+                                            <div class="single-event clear-fix">
+                                                <div class="date float-left p-color-bg">
+                                                    <?=date("j",$zurs->created_date)?> <span><?=date("M",$zurs->created_date)?></span>
+                                                </div> <!-- /.date -->
+                                                <div class="post float-left">
+                                                    <a href="<?=Url::to('/?slug='.$zurs->template->slug.'&item_slug='.$zurs->slug)?>" class="tran3s"><?=$zurs->translate->title?></a>
+                                                    <ul>
+                                                        <li><i class="fa fa-eye" aria-hidden="true"></i> <?=$zurs->views?></li>
+                                                        <li><a ><?=number_format($zurs->price, 0, ',', ' ')?> сум</a></li>
+                                                    </ul>
+                                                </div> <!-- /.post -->
+                                            </div> <!-- /.single-event -->
+                                        <?php endforeach; ?>
+                                    </div> <!-- /.box-wrapper -->
+                                </div> <!-- /.sidebar-box.feature-event.feature-course-sidebar -->
 
 	        					<div class="sidebar-box feature-event">
 	        						<div class="box-wrapper">
