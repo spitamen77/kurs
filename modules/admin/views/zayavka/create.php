@@ -1,16 +1,15 @@
 <?php
 
-use app\models\Lang;
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\dilshod\MenuItem */
+/* @var $model app\models\dilshod\Zayavka */
 
-$this->title = 'Create Item';
-$this->params['breadcrumbs'][] = ['label' => Lang::t('Items'), 'url' => ['index']];
+$this->title = 'Create Zayavka';
+$this->params['breadcrumbs'][] = ['label' => 'Zayavkas', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="menu-item-create">
+<div class="zayavka-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

@@ -9,9 +9,9 @@ use app\models\Lang;
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer-about">
-                    <h4>About edutech</h4>
+                    <h4><?=Lang::t('About us')?></h4>
                     <p>EDUTECH Mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the sys- tem, and expound the actual teachings of the great explorer</p>
-                    <a href="about-us.html" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> About us</a>
+                    <a href="<?=Url::to('/site/about')?>" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> <?=Lang::t('About us')?></a>
                     <a href="our-teacher.html" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> Team Member</a>
                     <ul>
                         <li><a href="https://www.facebook.com/groups/934843233533389/" target="_blank" class="tran3s round-border icon"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -20,31 +20,16 @@ use app\models\Lang;
                     </ul>
                 </div> <!-- /.footer-about -->
 
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 footer-contact">
-                    <h4>CONTACT US</h4>
-                    <ul>
-                        <li>
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            <a href="mailto:outcometree101@gmail.com" class="tran3s">outcometree101@gmail.com</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                            <a href="tel:+998942996949" class="tran3s">+998942996949</a>
-                        </li>
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Алишер Навоий номидаги миллий боғ енида</li>
-                    </ul>
-                </div> <!-- /.footer-contact -->
-
                 <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 footer-quick-link">
-                    <h4>Quick link</h4>
+                    <h4><?=Lang::t('Quick link')?></h4>
                     <ul>
                         <?php PrintMenu2(Menu::menus()); ?>
-                       
+
                     </ul>
                 </div> <!-- /.footer-quick-link -->
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer-event">
-                    <h4>Latest events</h4>
+                    <h4><?=Lang::t('Latest events')?></h4>
 
                     <div id="footer-event-carousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
@@ -151,6 +136,21 @@ use app\models\Lang;
                         </div>
                     </div> <!-- /#footer-event-carousel -->
                 </div> <!-- /.footer-event -->
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 footer-contact">
+                    <h4><?=Lang::t('Contact us')?></h4>
+                    <ul>
+                        <li>
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <a href="mailto:<?=Lang::t('emailto')?>" class="tran3s"><?=Lang::t('emailto')?></a>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <a href="tel:<?=Lang::t('telefon')?>" class="tran3s"><?=Lang::t('telefon')?></a>
+                        </li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i><?=Lang::t('Address')?></li>
+                    </ul>
+                </div> <!-- /.footer-contact -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
     </div> <!-- /.top-footer -->

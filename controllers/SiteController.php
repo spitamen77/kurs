@@ -87,6 +87,8 @@ class SiteController extends Controller
     {
         if ($slug) {
             $menu = Menu::find()->where(['slug' => $slug])->one();
+            if (empty($menu)) return $this->render('error');
+
             $items = MenuItem::find()->where(['menu_id'=>$menu->id])->orderBy(['id'=>SORT_DESC])->all();
             if ($item_slug) {
                 $items = MenuItem::find()->where(['slug'=>$item_slug])->orderBy(['id'=>SORT_DESC])->all();
@@ -317,6 +319,25 @@ class SiteController extends Controller
         $teacher = Teacher::find()->orderBy(['id'=>SORT_DESC])->all();
         return $this->render('teachers', [
             'model' => $teacher,
+        ]);
+    }
+
+    public function actionTeacher($id)
+    {
+        $teacher = Teacher::find()->where(['not',['id'=>$id]])->orderBy(['id'=>SORT_DESC])->limit(9)->all();
+        return $this->render('teacher', [
+            'model' => Teacher::find()->where(['id'=>$id])->one(),
+            'teacher'=>$teacher
+        ]);
+    }
+
+    public function actionBooks()
+    {
+        $book = MenuItem::find()->where(['not',['file'=>null]])
+            ->andWhere(['not',['file'=>'']])
+            ->orderBy(['id'=>SORT_DESC])->limit(25)->all();
+        return $this->render('books', [
+            'model' => $book,
         ]);
     }
 }

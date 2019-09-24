@@ -9,9 +9,9 @@ $this->title = $menu->title;
 			<div class="page-breadcrum">
 				<div class="container">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+                        <li><a href="<?=Url::to('/')?>"><?=Lang::t('Home')?></a></li>
 						<li>-</li>
-						<li>Blog</li>
+						<li><?=Lang::t('Pages')?></li>
 					</ul>
 				</div> <!-- /.container -->
 			</div> <!-- /.page-breadcrum -->
@@ -51,7 +51,7 @@ $this->title = $menu->title;
 
 	        					<div class="sidebar-box talent-teacher">
 	        						<div class="box-wrapper">
-	        							<h4>Talent teacher</h4>
+	        							<h4><?=Lang::t('Talent teacher')?></h4>
 	        							
 	        							<div id="talent-teacher-carousel" class="carousel slide" data-ride="carousel">
 										  	  <!-- Indicators -->
@@ -69,19 +69,13 @@ $this->title = $menu->title;
 											      <h6><?=$tech->name?></h6>
 
 											      <ul class="organize-list">
-					        							<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <?=$tech->email?></li>
-					        							<li><i class="fa fa-phone" aria-hidden="true"></i> <?=$tech->phone?></li>
-					        							<!-- <li><i class="fa fa-calendar" aria-hidden="true"></i> Economic Analysis</li> -->
-					        							<li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> <?=$tech->fan?></li>
+                                                      <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> <?=$tech->fan?></li>
+                                                      <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <?=$tech->email?></li>
+                                                      <li><i class="fa fa-phone" aria-hidden="true"></i> <?=$tech->phone?></li>
+                                                       <li><i class="fa fa-facebook" aria-hidden="true"></i> <?=$tech->facebook?></li>
 				        							</ul>
 
-				        							<ul class="share-icon">
-														<li><a href="#" class="tran3s round-border icon"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								        				<li><a href="#" class="tran3s round-border icon"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-														<li><a href="#" class="tran3s round-border icon"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-													</ul>
-
-													<a href="teacher-profile.html" class="theme-bg-color view-profile tran3s">View Profile</a>
+													<a href="<?=Url::to('/site/teacher?id='.$tech->id)?>" class="theme-bg-color view-profile tran3s"><?=Lang::t('View Profile')?></a>
 											    </div> <!-- /.item -->
 												<?php endforeach;?>   
 											</div>
@@ -91,7 +85,7 @@ $this->title = $menu->title;
 
                                 <div class="sidebar-box feature-event feature-course-sidebar">
                                     <div class="box-wrapper">
-                                        <h4>Featured courses</h4>
+                                        <h4><?=Lang::t('Featured courses')?></h4>
                                         <?php foreach ($kurs as $zurs) :?>
                                             <div class="single-event clear-fix">
                                                 <div class="date float-left p-color-bg">

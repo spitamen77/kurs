@@ -18,7 +18,7 @@ class MenuItemSearch extends MenuItem
     {
         return [
             [['id', 'menu_id', 'views', 'status', 'price', 'sale', 'user_id', 'created_date', 'updated_date'], 'integer'],
-            [['title', 'photo', 'short', 'text', 'slug'], 'safe'],
+            [['title', 'photo', 'short', 'text', 'slug','file'], 'safe'],
         ];
     }
 

@@ -49,11 +49,16 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             'title',
             'short',
-            'text:ntext',
+//            'text:ntext',
             //'slug',
             'views',
              //'status',
-            'price',
+            [
+                'attribute' => 'price',
+                'value' => function ($model) {
+                    return number_format($model->price, 0, ',', ' ');
+                },
+            ],
             'sale',
             [
               'attribute' => 'status',

@@ -61,7 +61,7 @@ $images = Photo::getPhoto();
         <div class="item-part float-left item1 p-color-bg">
             <h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> LEARN COUSES first</h3>
             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequun- tur magni dolores eos qui ratione </p>
-            <a href="course-details.html" class="tran3s">Rede more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            <a href="?slug=programms" class="tran3s"><?=Lang::t('Read more')?> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
         </div>
         <div class="item-part float-left item2">
             <img src="/themes/edutech/images/1 (1).jpg" alt="Image">
@@ -69,7 +69,7 @@ $images = Photo::getPhoto();
         <div class="item-part float-left item1 p-color-bg">
             <h3><i class="fa fa-book" aria-hidden="true"></i> BOOK LIBRARY</h3>
             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequun- tur magni dolores eos qui ratione </p>
-            <a href="course-details.html" class="tran3s">Rede more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            <a href="/site/books" class="tran3s">Rede more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
         </div>
     </div> <!-- /.container -->
 </div> <!-- /.theme-manage-area -->
@@ -86,7 +86,7 @@ $images = Photo::getPhoto();
 <div class="welcome-section">
     <div class="container">
         <div class="section-title wow fadeInUp">
-            <h2 class="p-color">Welcome to edutech</h2>
+            <h2 class="p-color">Welcome to outcome tree</h2>
             <h5>awesome success with student</h5>
             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem </p>
         </div> <!-- /.section-title -->
@@ -184,8 +184,8 @@ $images = Photo::getPhoto();
 <div class="event-section wow fadeInUp">
     <div class="container">
         <div class="theme-title">
-            <h2>Events</h2>
-            <p>Our upcoming event you should mind always</p>
+            <h2><?=Lang::t('Events')?></h2>
+            <p><?=Lang::t('Our upcoming event you should mind always')?></p>
         </div>
 
         <div class="row">

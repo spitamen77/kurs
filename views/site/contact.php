@@ -8,6 +8,7 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 use app\models\Lang;
+use yii\helpers\Url;
 
 $this->title = Lang::t('Contact us');
 $this->params['breadcrumbs'][] = $this->title;
@@ -17,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="page-breadcrum">
                 <div class="container">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="<?=Url::to('/')?>"><?=Lang::t('Home')?></a></li>
                         <li>-</li>
                         <li><?=$this->title?></li>
                     </ul>
@@ -45,7 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                                 <?php else: ?>
                                 <!-- <h3>Send A Message</h3> -->
-                                <p>Your email address will not be published.</p>
+                                <p><?=Lang::t('Your email address will not be published')?>.</p>
                                 <?php $form = ActiveForm::begin(['class'=>'form-validation']); ?>
                                 <!-- <form action="inc/sendemail.php" class="form-validation" autocomplete="off"> -->
                                     <div class="row">
@@ -76,18 +77,18 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 wow fadeInRight">
                             <div class="contactUs-address">
                                 <h3><?=$this->title?></h3>
-                                <p>Welcome to our website , Feel free to contact us any time </p>
+                                <p><?=Lang::t('Welcome to our website , Feel free to contact us any time')?> </p>
 
                                 <ul>
                                     <li>
                                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                        <a href="mailto:outcometree101@gmail.com" class="tran3s">outcometree101@gmail.com</a>
+                                        <a href="mailto:<?=Lang::t('emailto')?>" class="tran3s"><?=Lang::t('emailto')?></a>
                                     </li>
                                     <li>
                                         <i class="fa fa-phone" aria-hidden="true"></i>
-                                        <a href="tel:+998942996949" class="tran3s">+998942996949</a>
+                                        <a href="tel:<?=Lang::t('telefon')?>" class="tran3s"><?=Lang::t('telefon')?></a>
                                     </li>
-                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Edine rode,1234 Plot/RS ,CA <br>Near army club, #2 Road,NY</li>
+                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i><?=Lang::t('Address')?></li>
                                 </ul>
 
                             </div> <!-- /.our-address -->

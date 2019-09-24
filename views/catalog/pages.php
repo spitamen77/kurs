@@ -11,9 +11,9 @@ $this->title = $menu->title;
 <div class="page-breadcrum">
     <div class="container">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="<?=Url::to('/')?>"><?=Lang::t('Home')?></a></li>
             <li>-</li>
-            <li>Blog</li>
+            <li><?=Lang::t('Pages')?></li>
         </ul>
     </div> <!-- /.container -->
 </div> <!-- /.page-breadcrum -->

@@ -78,6 +78,15 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             'time',
             [
+                'attribute' =>  Lang::t("File"),
+                'format' => 'raw',
+                'value' => function ($model) {
+                    if (!empty($model->file))
+                        return '<a href="/web/'.$model->file.'" target="_blank">'.$model->file.'</a>';
+                    else return Lang::t('Fayl yuklanmagan');
+                },
+            ],
+            [
              'attribute' =>  Lang::t("Rasm"),
              'format' => 'raw',
              'value' => function ($model) {   

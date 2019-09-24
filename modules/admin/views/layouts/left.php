@@ -11,9 +11,9 @@
             </div>
             <div class="pull-left info">
                 <a href="<?=Yii::$app->UrlManager->createUrl('/admin/.')?>"
-                <p>www.admin.uz</p>
+                <p>Admin panel</p>
                 </a>
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                <a href="<?=Yii::$app->UrlManager->createUrl('/admin/.')?>"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>
         <a href="<?=Yii::$app->UrlManager->createUrl('/admin/user/user')?>">

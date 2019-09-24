@@ -97,6 +97,7 @@ class MenuItemController extends Controller
                 }
             }
             $model->photo = rasm($model, 'photo');
+            $model->file = rasm($model, 'file');
             if($model->save()) return $this->redirect(['view', 'id' => $model->id]);
         }
 
@@ -149,9 +150,15 @@ class MenuItemController extends Controller
                             return $path;
                         }
                     }
-                    else return $model2->photo;
+                    else {
+                        if ($rasm=='photo') return $model2->photo;
+                        else return $model2->file;
+                    };
                 }
-                else return $model2->photo;
+                else {
+                    if ($rasm=='photo') return $model2->photo;
+                    else return $model2->file;
+                };
             }
 
             $lang->load(Yii::$app->request->post());
@@ -176,6 +183,7 @@ class MenuItemController extends Controller
                 # code...
             }
             $model->photo = qayta($model, 'photo', $model2);
+            $model->file = qayta($model, 'file', $model2);
 
             $model->save();
 

@@ -894,7 +894,7 @@ header.inner-header .top-header {
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: #cd2122;
+  background: #017536;
 }
 .popular-course .owl-theme .owl-nav  {
   margin-top: 40px;
@@ -1205,12 +1205,12 @@ header.inner-header .top-header {
   width: 14px;
   height:14px;
   border:none;
-  background: #fbdada;
+  background: #c4eab0;
   margin: 0 2px;
 }
 .carousel-indicators .active,
 .carousel-indicators li:hover {
-  background: #cd2122;
+  background: #017536;
   width: 14px;
   height:14px;
   margin: 0 2px;
@@ -1326,7 +1326,7 @@ footer .top-footer .footer-about {
 }
 footer .top-footer .footer-about p:first-letter {
   font-size: 37px;
-  color:#cd2122;
+  color:#017536;
 }
 footer .top-footer .footer-about p {
   margin: 0 0 30px 0;
@@ -1391,7 +1391,7 @@ footer .top-footer .footer-contact ul li i.fa-map-marker {
   font-size: 18px;
 }
 footer .top-footer .footer-contact ul li,footer .top-footer .footer-contact ul li a {
-  color:#c5c4c4;
+  color:rgb(255, 192, 0);
 }
 footer .footer-quick-link {
   padding-left: 35px;
@@ -1442,7 +1442,7 @@ footer .footer-event .item ul ul li {
   display: inline-block;
   margin-right: 7px;
   font-size: 12px;
-  color:#c5c5c5;
+  color:#ffffff;
 }
 footer .footer-event .item ul ul li i {
   margin-right: 5px;
@@ -1453,12 +1453,12 @@ footer .footer-event .item ul ul li:last-child {
 footer .footer-event .carousel-indicators li {
   width:13px;
   height:13px;
-  background: #341414;
+  background: #f0f0f0;
 }
 footer .footer-event .carousel-indicators .active, footer .footer-event .carousel-indicators li:hover {
   width:13px;
   height: 13px;
-  background: #cd2122;
+  background: #017536;
 }
 footer .footer-event .carousel-indicators {
   text-align: left;
@@ -1557,7 +1557,7 @@ footer .bottom-footer a:hover {
   position: absolute;
   top:0;
   left:0;
-  background:rgba(205,33,34,0.75);
+  background:rgba(4, 105, 21, 0.75);
   opacity: 0;
   overflow: hidden;
   -webkit-transform: scale(0.8);
@@ -1587,7 +1587,7 @@ footer .bottom-footer a:hover {
           transform: scale(1);
 }
 .our-teacher .item-wrapper:hover {
-  border-color: #cd2122;
+  border-color: #017536;
 }
 .our-teacher .owl-theme .owl-dots,.latest-event-slider .owl-theme .owl-dots {
   margin-top: 20px;
@@ -1997,7 +1997,7 @@ text-transform: uppercase;
   text-transform: uppercase;
   display: inline-block;
   line-height: 17px;
-  border-right:4px solid #cd2122;
+  border-right:4px solid #017536;
   padding-right: 15px;
 }
 .sidebarOne .quick-event-list ul {

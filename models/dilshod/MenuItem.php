@@ -49,7 +49,8 @@ class MenuItem extends \yii\db\ActiveRecord
             ['slug', 'unique', 'message' => 'Slug mavjud'],
             [['menu_id', 'views', 'status', 'price', 'sale', 'user_id','teacher_id', 'created_date', 'updated_date'], 'integer'],
             [['text'], 'string'],
-            [['title', 'photo', 'slug','time'], 'string', 'max' => 128],
+            [['file'], 'file'],
+            [['title', 'photo', 'slug','time','file'], 'string', 'max' => 128],
             [['short'], 'string', 'max' => 255],
         ];
     }
@@ -117,6 +118,7 @@ class MenuItem extends \yii\db\ActiveRecord
             'teacher_id' => Lang::t('Teacher'),
             'time' => Lang::t('Time'),
             'user_id' => 'User ID',
+            'file' => 'File',
             'created_date' => 'Created Date',
             'updated_date' => 'Updated Date',
         ];

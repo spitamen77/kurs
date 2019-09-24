@@ -20,9 +20,9 @@ else $action = Yii::$app->controller->action->id;
         <div class="container">
             <div class="left-side float-left">
                 <ul>
-                    <li><span class="icon round-border"><i class="ficon flaticon-signs"></i></span> <a href="<?=Url::to('site/contact')?>" class="tran3s">Алишер Навоий номидаги миллий боғ енида</a></li>
-                    <li><span class="icon round-border"><i class="ficon flaticon-multimedia"></i></span> <a href="mailto:outcometree101@gmail.com" class="tran3s">outcometree101@gmail.com</a></li>
-                    <li><span class="icon round-border"><i class="ficon flaticon-technology"></i></span> <a href="tel:+998942996949" class="tran3s">+998942996949</a></li>
+                    <li><span class="icon round-border"><i class="ficon flaticon-signs"></i></span> <a href="<?=Url::to('/site/contact')?>" class="tran3s"><?=Lang::t('Address')?></a></li>
+                    <li><span class="icon round-border"><i class="ficon flaticon-multimedia"></i></span> <a href="mailto:<?=Lang::t('emailto')?>" class="tran3s"><?=Lang::t('emailto')?></a></li>
+                    <li><span class="icon round-border"><i class="ficon flaticon-technology"></i></span> <a href="tel:<?=Lang::t('telefon')?>" class="tran3s"><?=Lang::t('telefon')?></a></li>
                     <li><span class="icon round-border"><i class="ficon flaticon-translation"></i></span>
                         <?= Html::a(Lang::t('Uz'), ['site/lang',['id'=>'uz-UZ', 'url'=>Url::current()]]) ?>
                         <span> | </span>
@@ -69,7 +69,7 @@ else $action = Yii::$app->controller->action->id;
                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li class="dropdown-holder <?=($action=='index')?'current-page-item':''?>"><a href="<?=Url::to('/')?>"><?=Lang::t('bosh sahifa')?></a>
-                            <li class="dropdown-holder <?=($action=='about')?'current-page-item':''?>"><a href="<?=Url::to('/site/about')?>"><?=Lang::t('About')?></a>
+                            <li class="dropdown-holder <?=($action=='about')?'current-page-item':''?>"><a href="<?=Url::to('/site/about')?>"><?=Lang::t('About us')?></a>
                             </li>
                             <?php PrintMenu(Menu::menus()); ?>
                             <li class="dropdown-holder <?=($action=='contact')?'current-page-item':''?>"><a href="<?=Url::to('/site/contact')?>"><?=Lang::t('Contact us')?></a>
