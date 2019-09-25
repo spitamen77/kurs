@@ -2,11 +2,12 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-
+use app\models\Lang;
+use yii\helpers\Url;
 /* @var $this yii\web\View */
 /* @var $model app\models\dilshod\TextTranslate */
 
-$this->title = $model->id;
+$this->title = $model->text;
 $this->params['breadcrumbs'][] = ['label' => 'Text Translates', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -24,17 +25,18 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
+        <a class="btn btn-success" href="<?=Url::to('index')?>"><?=Lang::t('Back')?></a>
     </p>
 
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
+//            'id',
             'lang',
             'slug',
             'text',
             'status',
-            'updated_date',
+//            'updated_date',
         ],
     ]) ?>
 
