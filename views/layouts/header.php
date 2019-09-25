@@ -86,7 +86,7 @@ else $action = Yii::$app->controller->action->id;
             <?  if ($value['children']) {   ?>
                 <ul class="sub-menu">
                     <? PrintMenu($value['children']); ?>
-                    <li><a href="<?=Url::to('site/teachers')?>"><?=Lang::t('Teacher')?></a>  </li>
+                    <li><a href="<?=Url::to('/site/teachers')?>"><?=Lang::t('Teacher')?></a>  </li>
                 </ul>
             <?} ?>
         </li>

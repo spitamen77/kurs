@@ -9,7 +9,9 @@
  */
 use yii\helpers\Url;
 use app\models\Lang;
-$this->title = Lang::t('Teacher')." - ".$model->name
+$this->title = Lang::t('Teacher')." - ".$model->name;
+$this->params['desc']=$this->title;
+$this->params['img'] = $model->photo;
 ?>
 <!-- Page Breadcrum __________________________ -->
 <div class="page-breadcrum">

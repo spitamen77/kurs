@@ -1,6 +1,7 @@
 <?php
 
 namespace app\controllers;
+use app\models\dilshod\Zayavka;
 use app\models\Lang;
 use Yii;
 use app\models\User;
@@ -181,7 +182,8 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->render('about');
+        $teacher = Teacher::find()->orderBy(['id'=>SORT_DESC])->limit(15)->all();
+        return $this->render('about',['model'=>$teacher]);
     }
 
     public function actionSignup()
@@ -316,7 +318,7 @@ class SiteController extends Controller
 
     public function actionTeachers()
     {
-        $teacher = Teacher::find()->orderBy(['id'=>SORT_DESC])->all();
+        $teacher = Teacher::find()->orderBy(['id'=>SORT_DESC])->limit(15)->all();
         return $this->render('teachers', [
             'model' => $teacher,
         ]);
@@ -339,5 +341,17 @@ class SiteController extends Controller
         return $this->render('books', [
             'model' => $book,
         ]);
+    }
+
+    public function actionZayavka()
+    {
+        $model = new Zayavka();
+        if ($model->load(Yii::$app->request->post())) {
+            $model->save();
+            Yii::$app->session->setFlash('contactFormSubmitted');
+
+            return $this->redirect(Yii::$app->request->referrer);
+        }
+        return $this->redirect(Yii::$app->request->referrer);
     }
 }

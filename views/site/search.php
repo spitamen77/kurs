@@ -2,6 +2,7 @@
 use yii\helpers\Url;
 use app\models\Lang;
 $this->title = Lang::t('Search');
+$this->params['desc']=$this->title;
 ?>
 <!-- Event Section _______________________ -->
 <div class="event-section wow fadeInUp">

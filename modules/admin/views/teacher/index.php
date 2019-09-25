@@ -28,7 +28,13 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'id',
             'name',
             'fan',
-            'phone',
+//            'phone',
+            [
+                'attribute' => 'phone',
+                'value' => function ($model) {
+                    return number_format($model->phone, 0, ',', ' ');
+                },
+            ],
             'email:email',
             // 'biography',
             // 'photo',

@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-
+use app\models\Lang;
 /* @var $this yii\web\View */
 /* @var $model app\models\dilshod\Zayavka */
 
@@ -24,16 +24,24 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
+        <a class="btn btn-success" href='javascript:history.back()'><?=Lang::t('Back')?></a>
     </p>
 
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
+//            'id',
             'name',
             'phone',
             'message',
-            'status',
+            [
+                'attribute' => 'status',
+                'filter' => false,
+                // 'format' => 'raw',
+                'value' => function ($model) {
+                    return  $model->getStatus()[$model->status];
+                },
+            ],
         ],
     ]) ?>
 

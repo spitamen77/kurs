@@ -4,6 +4,7 @@ use app\models\Lang;
 use yii\widgets\LinkPager;
 
 $this->title = $menu->title;
+$this->params['desc'] = $this->title.' - '.$this->title;
 ?>
 <!-- Page Breadcrum __________________________ -->
 			<div class="page-breadcrum">

@@ -1,10 +1,13 @@
 <?php
 use yii\helpers\Html;
 use app\models\Lang;
-use app\models\dilshod\User;
-use app\models\ShopcartOrders;
+use app\models\dilshod\Zayavka;
+use app\models\ContactForm;
 /* @var $this \yii\web\View */
 /* @var $content string */
+
+$contact = ContactForm::getNew();
+$zayavka = Zayavka::getNew();
 ?>
 
 <header class="main-header">
@@ -23,27 +26,23 @@ use app\models\ShopcartOrders;
 <li class="dropdown notifications-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-bell-o"></i>
-                        <span class="label label-warning"><?=User::getNew()?></span>
+                        <span class="label label-warning"><?=$zayavka+$contact?></span>
                     </a>
                     <ul class="dropdown-menu">
                         <li class="header"><?=Lang::t("Ma'lumot")?></li>
                         <li>
                             <!-- inner menu: contains the actual data -->
                             <ul class="menu">
+
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-shopping-cart text-green"></i> <?=ShopcartOrders::shop()?> ta sotib olishga urinish
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-users text-aqua"></i> <?=User::getNew()?> ta Yangi userlar mavjud
+                                        <i class="fa fa-eye text-aqua"></i> <?=$zayavka?> ta Kursga qiziqish bor
                                     </a>
                                 </li>
                                 
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-users text-red"></i> <?=User::getNot()?> ta tasdiqlanmagan userlar
+                                        <i class="fa fa-users text-red"></i> <?=$contact?> ta Xatlar bor
                                     </a>
                                 </li>
 

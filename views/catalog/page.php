@@ -1,9 +1,11 @@
 <?php
 use app\models\Lang;
 use yii\helpers\Url;
+use yii\helpers\Html;
 // echo "<pre>";var_dump($model);
 $this->title= $model->translate->title;
-
+$this->params['desc'] = $model->translate->short;
+$this->params['img'] = $model->photo;
 ?>
 
 <!-- Page Breadcrum __________________________ -->
@@ -22,6 +24,15 @@ $this->title= $model->translate->title;
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                 <div class="course-details-content clear-fix">
+                    <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
+                        <div class="alert alert-success">
+                            <?=Lang::t('Thank you for contacting us. We will respond to you as soon as possible')?>.
+                        </div>
+
+                        <p>
+
+                        </p>
+                    <?php endif; ?>
                     <div class="img">
                         <img src="<?=$model->photo?>" alt="Image">
                         <span class="p-color-bg"><?=number_format($model->price, 0, ',', ' ')?> сум</span>
@@ -44,7 +55,7 @@ $this->title= $model->translate->title;
                         <div class="single-box-content clear-fix">
                             <div class="item float-left">
                                 <div class="theme-bg-color">
-                                    <div class="img-holder round-border"><img src="<?=$model->teacher->photo?>" alt="Image"></div>
+                                    <div class="img-holder round-border"><img src="<?=$model->teacher->photo?>" alt="<?=$model->teacher->name?>"></div>
                                     <span><?=$model->teacher->name?></span>
 
                                     <p><?=$model->teacher->fan?></p>
@@ -98,9 +109,60 @@ $this->title= $model->translate->title;
 
 
                     <hr>
-                    <a href="#" class="take-course-button tran3s"><?=Lang::t('Take this course NOW')?></a>
+                    <a href="#" type="button" data-toggle="modal" data-target="#exampleModal" class="take-course-button tran3s"><?=Lang::t('Take this course')?></a>
                 </div> <!-- /.course-details-content -->
             </div> <!-- /.col- -->
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"><?=Lang::t('Take this course')?></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="w0" action="/site/zayavka" method="post">
+                                <?=Html::hiddenInput(Yii::$app->getRequest()->csrfParam, Yii::$app->getRequest()->getCsrfToken(), []);?>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="form-group field-contactform-name required">
+
+                                            <input type="text" id="contactform-name" class="form-control" name="Zayavka[name]" placeholder="<?=Lang::t('Name')?>" aria-required="true">
+
+                                            <p class="help-block help-block-error"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="form-group field-contactform-email required">
+
+                                            <input type="text" pattern="[8-9]{3}[0-9]{9}" maxlength="12" id="contactform-email" class="form-control" value="998" name="Zayavka[phone]" placeholder="998YYXXXXXXX" aria-required="true">
+
+                                            <p class="help-block help-block-error"></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="form-group field-contactform-body required">
+
+                                            <textarea id="contactform-body" class="form-control" name="Zayavka[message]" rows="6" aria-required="true"></textarea>
+
+                                            <p class="help-block help-block-error"></p>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary center-block" title="Send"><?=Lang::t('Send')?></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+<!--                        <div class="modal-footer">-->
+<!--                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--                            <button type="button" class="btn btn-primary">Save changes</button>-->
+<!--                        </div>-->
+                    </div>
+                </div>
+            </div>
             <!-- _________________ SideBar _________________ -->
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sidebarOne">
                 <div class="wrapper-left">

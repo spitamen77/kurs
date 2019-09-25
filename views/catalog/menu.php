@@ -3,6 +3,7 @@ use yii\helpers\Url;
 use app\models\Lang;
 
 $this->title = $menu->title;
+$this->params['desc']=$this->title.' - '.$this->title;
 ?>
 
 

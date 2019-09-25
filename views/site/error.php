@@ -9,6 +9,8 @@ use yii\helpers\Url;
 use app\models\Lang;
 
 $this->title = Lang::t('Error');
+$this->params['desc']=$this->title;
+$this->params['img'] = 'themes/edutech/images/404.png';
 ?>
 <!-- Page Breadcrum __________________________ -->
 <div class="page-breadcrum">

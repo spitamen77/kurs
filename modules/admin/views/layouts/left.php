@@ -42,6 +42,7 @@
                     ['label' => 'Rasm', 'icon' => 'file-code-o', 'url' => ['/admin/photo/index']],
                     ['label' => 'Teacher', 'icon' => 'dashboard', 'url' => ['/admin/teacher/index']],
                     ['label' => 'Contact', 'icon' => 'dashboard', 'url' => ['/admin/contact/index']],
+                    ['label' => 'Zayavkalar', 'icon' => 'dashboard', 'url' => ['/admin/zayavka/index']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     // [
                     //     'label' => 'Some tools',

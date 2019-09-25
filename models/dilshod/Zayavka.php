@@ -2,6 +2,7 @@
 
 namespace app\models\dilshod;
 
+use app\models\Lang;
 use Yii;
 
 /**
@@ -44,10 +45,23 @@ class Zayavka extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'phone' => 'Phone',
-            'message' => 'Message',
+            'name' => Lang::t('Name'),
+            'phone' => Lang::t('Phone'),
+            'message' => Lang::t('Message'),
             'status' => 'Status',
         ];
+    }
+
+    public function getStatus()
+    {
+        return [
+            '1' => Lang::t('Tekshirilgan'),
+            '0' => Lang::t('Ko`rilmagan'),
+        ];
+    }
+
+    public static function getNew()
+    {
+        return self::find()->where(['status'=>0])->count();
     }
 }

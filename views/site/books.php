@@ -10,6 +10,7 @@
 use yii\helpers\Url;
 use app\models\Lang;
 $this->title = Lang::t('Books library');
+$this->params['desc']=$this->title;
 ?>
 <div class="page-breadcrum">
     <div class="container">

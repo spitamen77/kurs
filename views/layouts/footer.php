@@ -1,5 +1,6 @@
 <?php
 use app\models\maxpirali\Menu;
+use app\models\maxpirali\MenuItem;
 use yii\helpers\Url;
 use app\models\Lang;
 ?>
@@ -12,11 +13,12 @@ use app\models\Lang;
                     <h4><?=Lang::t('About us')?></h4>
                     <p>EDUTECH Mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the sys- tem, and expound the actual teachings of the great explorer</p>
                     <a href="<?=Url::to('/site/about')?>" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> <?=Lang::t('About us')?></a>
-                    <a href="our-teacher.html" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> Team Member</a>
+<!--                    <a href="our-teacher.html" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> Team Member</a>-->
                     <ul>
                         <li><a href="https://www.facebook.com/groups/934843233533389/" target="_blank" class="tran3s round-border icon"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                        
-                        <li><a href="https://t.me/outcometree" target="_blank" class="tran3s round-border icon"><i class="fa fa-paper-plane" aria-hidden="true"></i></a></li>
+                        <li><a href="https://t.me/outcometree" target="_blank" class="tran3s round-border icon" title="Telegram"><i class="fa fa-paper-plane" aria-hidden="true"></i></a></li>
+                        <li><a href="http://websar.uz" target="_blank" class="tran3s round-border icon" title="Sayt yaratuvchi"><i class="fa fa-copyright" aria-hidden="true"></i></a></li>
                     </ul>
                 </div> <!-- /.footer-about -->
 
@@ -24,7 +26,9 @@ use app\models\Lang;
                     <h4><?=Lang::t('Quick link')?></h4>
                     <ul>
                         <?php PrintMenu2(Menu::menus()); ?>
-
+                        <li><a href="<?=Url::to('/site/teachers')?>"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                                <?=Lang::t('Teachers')?></a>
+                        </li>
                     </ul>
                 </div> <!-- /.footer-quick-link -->
 
@@ -43,94 +47,46 @@ use app\models\Lang;
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
                                 <ul>
+                                    <?php foreach (MenuItem::getXits(10,11,3) as $items) :?>
                                     <li>
-                                        <div class="date p-color-bg">27 <span>Dec</span></div>
-                                        <a href="event-details.html"><h6>Learning Management</h6></a>
+                                        <div class="date p-color-bg"><?=date("j",$items->created_date)?> <span><?=date("M",$items->created_date)?></span></div>
+                                        <a href="<?=Url::to('/?slug='.$items->template->slug.'&item_slug='.$items->slug)?>"><h6><?=$items->title?></h6></a>
                                         <ul>
-                                            <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
-                                            <li><i class="fa fa-tags" aria-hidden="true"></i> Gpur Academy</li>
+                                            <li><i class="fa fa-clock-o" aria-hidden="true"></i> <?=$items->time?></li>
+<!--                                            <li><i class="fa fa-tags" aria-hidden="true"></i> Gpur Academy</li>-->
                                         </ul>
                                     </li>
-
-                                    <li>
-                                        <div class="date p-color-bg">19 <span>Dec</span></div>
-                                        <a href="event-details.html"><h6>LEARN COUSES ONLINE</h6></a>
-                                        <ul>
-                                            <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
-                                            <li><i class="fa fa-tags" aria-hidden="true"></i> Gpur Academy</li>
-                                        </ul>
-                                    </li>
-
-                                    <li>
-                                        <div class="date p-color-bg">07 <span>Dec</span></div>
-                                        <a href="event-details.html"><h6>COURSES FOR FREE GED</h6></a>
-                                        <ul>
-                                            <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
-                                            <li><i class="fa fa-tags" aria-hidden="true"></i> Gpur Academy</li>
-                                        </ul>
-                                    </li>
+                                    <?php endforeach; ?>
                                 </ul>
                             </div> <!-- /.item -->
 
                             <div class="item">
                                 <ul>
-                                    <li>
-                                        <div class="date p-color-bg">27 <span>Dec</span></div>
-                                        <a href="event-details.html"><h6>Learning Management</h6></a>
-                                        <ul>
-                                            <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
-                                            <li><i class="fa fa-tags" aria-hidden="true"></i> Gpur Academy</li>
-                                        </ul>
-                                    </li>
-
-                                    <li>
-                                        <div class="date p-color-bg">19 <span>Dec</span></div>
-                                        <a href="event-details.html"><h6>LEARN COUSES ONLINE</h6></a>
-                                        <ul>
-                                            <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
-                                            <li><i class="fa fa-tags" aria-hidden="true"></i> Gpur Academy</li>
-                                        </ul>
-                                    </li>
-
-                                    <li>
-                                        <div class="date p-color-bg">07 <span>Dec</span></div>
-                                        <a href="event-details.html"><h6>COURSES FOR FREE GED</h6></a>
-                                        <ul>
-                                            <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
-                                            <li><i class="fa fa-tags" aria-hidden="true"></i> Gpur Academy</li>
-                                        </ul>
-                                    </li>
+                                    <?php foreach (MenuItem::getXits(11,12,3) as $items) :?>
+                                        <li>
+                                            <div class="date p-color-bg"><?=date("j",$items->created_date)?> <span><?=date("M",$items->created_date)?></span></div>
+                                            <a href="<?=Url::to('/?slug='.$items->template->slug.'&item_slug='.$items->slug)?>"><h6><?=$items->title?></h6></a>
+                                            <ul>
+                                                <li><i class="fa fa-clock-o" aria-hidden="true"></i> <?=$items->time?></li>
+                                                <!--                                            <li><i class="fa fa-tags" aria-hidden="true"></i> Gpur Academy</li>-->
+                                            </ul>
+                                        </li>
+                                    <?php endforeach; ?>
                                 </ul>
                             </div> <!-- /.item -->
 
                             <div class="item">
                                 <ul>
-                                    <li>
-                                        <div class="date p-color-bg">27 <span>Dec</span></div>
-                                        <a href="event-details.html"><h6>Learning Management</h6></a>
-                                        <ul>
-                                            <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
-                                            <li><i class="fa fa-tags" aria-hidden="true"></i> Gpur Academy</li>
-                                        </ul>
-                                    </li>
-
-                                    <li>
-                                        <div class="date p-color-bg">19 <span>Dec</span></div>
-                                        <a href="event-details.html"><h6>LEARN COUSES ONLINE</h6></a>
-                                        <ul>
-                                            <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
-                                            <li><i class="fa fa-tags" aria-hidden="true"></i> Gpur Academy</li>
-                                        </ul>
-                                    </li>
-
-                                    <li>
-                                        <div class="date p-color-bg">07 <span>Dec</span></div>
-                                        <a href="event-details.html"><h6>COURSES FOR FREE GED</h6></a>
-                                        <ul>
-                                            <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
-                                            <li><i class="fa fa-tags" aria-hidden="true"></i> Gpur Academy</li>
-                                        </ul>
-                                    </li>
+                                    <?php foreach (MenuItem::getXits(10,12,3) as $items) :?>
+                                        <li>
+                                            <div class="date p-color-bg"><?=date("j",$items->created_date)?> <span><?=date("M",$items->created_date)?></span></div>
+                                            <a href="<?=Url::to('/?slug='.$items->template->slug.'&item_slug='.$items->slug)?>"><h6><?=$items->title?></h6></a>
+                                            <ul>
+                                                <li><i class="fa fa-clock-o" aria-hidden="true"></i> <?=$items->time?></li>
+                                                <!--                                            <li><i class="fa fa-tags" aria-hidden="true"></i> Gpur Academy</li>-->
+                                            </ul>
+                                        </li>
+                                    <?php endforeach; ?>
                                 </ul>
                             </div> <!-- /.item -->
                         </div>

@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\dilshod\ZayavkaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Zayavkas';
+$this->title = 'Zayavkalar';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="zayavka-index">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Zayavka', ['create'], ['class' => 'btn btn-success']) ?>
+        <?//= Html::a('Create Zayavka', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -25,11 +25,23 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+//            'id',
             'name',
-            'phone',
+//            'phone',
+            [
+                'attribute' => 'phone',
+                'value' => function ($model) {
+                    return number_format($model->phone, 0, ',', ' ');
+                },
+            ],
             'message',
-            'status',
+            [
+                'attribute' => 'status',
+                'filter' => false,
+                'value' => function ($model) {
+                    return  $model->getStatus()[$model->status];
+                },
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

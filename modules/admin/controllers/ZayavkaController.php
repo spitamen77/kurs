@@ -52,8 +52,11 @@ class ZayavkaController extends Controller
      */
     public function actionView($id)
     {
+        $model = $this->findModel($id);
+        $model->status = 1;
+        $model->save(false);
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => $model,
         ]);
     }
 
@@ -85,7 +88,8 @@ class ZayavkaController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
+        $model->status=1;
+        $model->save(false);
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         }

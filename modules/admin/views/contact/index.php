@@ -10,6 +10,7 @@ use app\models\Lang;
 
 $this->title = Lang::t('Contact us');
 $this->params['breadcrumbs'][] = $this->title;
+
 ?>
 <div class="contact-form-index">
 
@@ -31,6 +32,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'email:email',
             'subject',
             'body',
+            [
+                'attribute' => 'status',
+                'filter' => false,
+                'value' => function ($model) {
+                    return  $model->getStatus()[$model->status];
+                },
+            ],
             //'status',
 
             ['class' => 'yii\grid\ActionColumn'],

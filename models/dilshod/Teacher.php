@@ -32,7 +32,7 @@ class Teacher extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'fan', 'biography'], 'required'],
-            [['name', 'fan', 'photo', 'email'], 'string', 'max' => 128],
+            [['name', 'fan', 'photo', 'email','hash'], 'string', 'max' => 128],
             [['biography'], 'string', 'max' => 4096],
             [['phone'], 'string', 'max' => 20],
         ];

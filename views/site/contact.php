@@ -12,6 +12,7 @@ use yii\helpers\Url;
 
 $this->title = Lang::t('Contact us');
 $this->params['breadcrumbs'][] = $this->title;
+$this->params['desc']=$this->title;
 ?>
 
             <!-- Page Breadcrum __________________________ -->
@@ -57,7 +58,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                             <?= $form->field($model, 'email')->input('email', ['placeholder' => "Email"])->label(false) ?>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <?= $form->field($model, 'subject')->input('text', ['placeholder' => Lang::t("Subject")])->label(false) ?>
+                                            <?= $form->field($model, 'subject')->input('text', ['placeholder' => Lang::t("Theme")])->label(false) ?>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <?= $form->field($model, 'body')->textarea(['rows' => 6])->label(false) ?>

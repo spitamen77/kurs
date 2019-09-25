@@ -1352,7 +1352,7 @@ footer .top-footer .footer-about ul li a {
   width: 50px;
   height:50px;
   /*background: #212121;*/
-  border: 1px solid #212121;
+  border: 1px solid #fff;
   line-height: 50px;
   text-align: center;
   font-size: 16px;
@@ -1365,7 +1365,7 @@ footer .top-footer .footer-contact ul {
 }
 footer .top-footer .footer-contact ul li {
   display: block;
-  border:1px solid #212121;
+  border:1px solid #fff;
   width:298px;
   height:62px;
   position: relative;
@@ -1704,7 +1704,7 @@ footer .bottom-footer a:hover {
 }
 .contact-us-page .contact-us-form input:focus,
 .contact-us-page .contact-us-form textarea:focus {
-  border-color: #cd2122;
+  border-color: #017536;
 }
 .contact-us-page .contact-us-form form ::-webkit-input-placeholder {
 text-transform: uppercase;
@@ -1742,7 +1742,7 @@ text-transform: uppercase;
   background: #edeaea;
   line-height: 35px;
   text-align: center;
-  color:#cd2122;
+  color:#017536;
   font-size: 16px;
   position: absolute;
   top:-17px;

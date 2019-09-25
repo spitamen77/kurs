@@ -66,4 +66,17 @@ class ContactForm extends \yii\db\ActiveRecord
         }
         return false;
     }
+
+    public function getStatus()
+    {
+        return [
+            '1' => Lang::t('Tekshirilgan'),
+            '0' => Lang::t('Ko`rilmagan'),
+        ];
+    }
+
+    public static function getNew()
+    {
+        return self::find()->where(['status'=>0])->count();
+    }
 }

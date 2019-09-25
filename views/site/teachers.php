@@ -9,15 +9,16 @@
 use app\models\Lang;
 use yii\helpers\Url;
 use app\models\maxpirali\MenuItem;
-
+$this->title = Lang::t('Teachers');
+$this->params['desc']=$this->title.' - '.$this->title;
 ?>
 <!-- Page Breadcrum __________________________ -->
 <div class="page-breadcrum">
     <div class="container">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="<?=Url::to('/')?>"><?=Lang::t('Home')?></a></li>
             <li>-</li>
-            <li>Teachers</li>
+            <li><?=$this->title?></li>
         </ul>
     </div> <!-- /.container -->
 </div> <!-- /.page-breadcrum -->
@@ -41,7 +42,7 @@ use app\models\maxpirali\MenuItem;
                                 </ul>
                             </div>
                         </div> <!-- /.img-holder -->
-                        <a href="teacher-profile.html"><h6><?=$item->name?></h6></a>
+                        <a href="<?=Url::to('/site/teacher?id='.$item->id)?>"><h6><?=$item->name?></h6></a>
                         <p><?=$item->fan?></p>
                     </div>
                 </div> <!-- /.item -->

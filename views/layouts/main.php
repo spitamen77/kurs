@@ -10,7 +10,7 @@ use app\assets\AppAsset;
 use app\models\Lang;
 
 AppAsset::register($this);
-// echo "<pre>"; var_dump($content);exit();
+// echo "<pre>"; var_dump($this->params);exit();
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -43,14 +43,14 @@ AppAsset::register($this);
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="<?=Lang::t('Training center Outcome Tree')?>">
     <meta property="og:title" content="<?= Html::encode($this->title) ?>">
-    <meta property="og:description" content="=====">
+    <meta property="og:description" content="<?=$this->params['desc']?>">
     <meta property="og:url" content="http://www.outcometree.uz<?=Yii::$app->request->url?>">
     <meta property="og:locale" content="<?= Yii::$app->language ?>">
-    <meta property="og:image" content="-====">
+    <meta property="og:image" content="<?=($this->params['img'])?'http://www.outcometree.uz/web/'.$this->params['img']:'http://www.outcometree.uz/web/themes/edutech/images/logo3.png'?>">
     <meta property="og:image:width" content="968">
     <meta property="og:image:height" content="504">
     <!-- Page Description and Author -->
-    <meta name="description" content="Margo - Responsive HTML5 Template">
+    <meta name="description" content="<?=$this->params['desc']?>">
     <meta name="author" content="http://www.websar.uz">
     
 <?php 

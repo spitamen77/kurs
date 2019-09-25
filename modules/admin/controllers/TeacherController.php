@@ -66,7 +66,6 @@ class TeacherController extends Controller
     public function actionCreate()
     {
         $model = new Teacher();
-
         if ($model->load(Yii::$app->request->post())) {
             function rasm($model,$qiymat){
                 $file = UploadedFile::getInstance($model, $qiymat);
@@ -85,6 +84,7 @@ class TeacherController extends Controller
                 }
             }
             $model->photo = rasm($model, 'photo');
+//            $model->hash = hash_file('md5', $model->photo);
             if ($model->save()) return $this->redirect(['view', 'id' => $model->id]);
         }
 

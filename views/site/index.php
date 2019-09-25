@@ -113,7 +113,7 @@ $images = Photo::getPhoto();
 <!-- Popular Course _________________________ -->
 <div class="popular-course wow fadeInUp theme-bg-color">
     <div class="container">
-        <h2>POPULAR COURSES</h2>
+        <h2><?=Lang::t('POPULAR COURSES')?></h2>
 
         <div class="row">
             <div class="theme-slider course-item-wrapper">

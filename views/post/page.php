@@ -3,7 +3,8 @@ use app\models\Lang;
 use yii\helpers\Url;
  // echo "<pre>";var_dump($model); 
 $this->title= $model->translate->title;
-
+$this->params['desc'] = $model->translate->short;
+$this->params['img'] = $model->photo;
 ?>
 
 	<!-- Page Breadcrum __________________________ -->
